@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Production builds and archives
+dist/
+dist.zip
+site-upload.zip
+
+# Legacy design plugin bundles
+public/plugins/
+
+# Tooling and IDE caches
+.DS_Store
+*.local
+.env*.local
+.ai/
+.adsum/
+.kombai/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

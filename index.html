@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f2e5df" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <title>AYZAN — Bestselling Skincare in Bangladesh | Authentic K-Beauty & Care</title>
+    <meta name="description" content="Discover Bangladesh's top-selling authentic skincare: Beauty of Joseon, COSRX, SKIN1004, The Ordinary. Instant bKash & Nagad payments and Free Delivery on orders over ৳2,500." />
+    <meta property="og:title" content="AYZAN Skincare — Pure Skin in its Best Light" />
+    <meta property="og:description" content="Authentic top-selling skincare rituals in Bangladesh. Free nationwide delivery on orders over ৳2,500." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ayzan.me" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <!-- Announcement Bar -->
+    <div class="announcement">
+      <span>PURE SKIN IN ITS BEST LIGHT</span>
+      <span class="dot">✦</span>
+      <span>MINDFUL SKINCARE FOR EVERYDAY RITUALS</span>
+      <span class="dot">✦</span>
+      <span>100% AUTHENTIC GUARANTEED</span>
+    </div>
+
+    <!-- Header Navigation -->
+    <header>
+      <button class="icon-btn mobile-only" id="menu" aria-label="Open menu">☰</button>
+      <a class="brand" href="#top">
+        <img src="/logo.png" alt="AYZAN Logo" class="brand-logo-img" />
+        <span class="brand-text">AYZAN</span>
+      </a>
+      <nav>
+        <a href="#shop">Bestsellers</a>
+        <a href="#ritual">Rituals</a>
+        <a href="#story">Our Story</a>
+        <a href="#payments">Payments & Delivery</a>
+        <a href="mailto:her.skincare@ayzan.me" class="nav-contact">Contact</a>
+      </nav>
+      <div class="header-right">
+        <button class="account-btn" id="accountBtn" aria-label="My Account">
+          <span class="account-icon">👤</span>
+          <span class="account-name" id="accountName">Sign In</span>
+        </button>
+        <button class="bag" id="bag" aria-label="Shopping bag">
+          <span class="bag-icon">⌑</span>
+          <span>Bag (<b id="count">0</b>)</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <a class="brand" href="#top">
+          <img src="/logo.png" alt="AYZAN Logo" class="brand-logo-img" />
+          <span class="brand-text">AYZAN</span>
+        </a>
+        <button class="icon-btn" id="closeMenu" aria-label="Close menu">×</button>
+      </div>
+      <button class="mobile-account-link" id="mobileAccountBtn">👤 Sign In / My Account</button>
+      <a href="#shop">Bestsellers</a>
+      <a href="#ritual">Rituals</a>
+      <a href="#story">Our Story</a>
+      <a href="#payments">Payments & Shipping</a>
+      <a href="mailto:her.skincare@ayzan.me">Contact Us</a>
+    </div>
+
+    <!-- Global Toast Alert -->
+    <div class="toast" id="toast"></div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="micro">MINDFUL AUTHENTIC SKINCARE FOR BANGLADESH</p>
+          <h1>Skin, in its<br><em>best light.</em></h1>
+          <p class="intro">Barrier-loving, climate-conscious formulations curated from Seoul and beyond. Engineered for high-humidity radiance, calm hydration, and quiet confidence.</p>
+          <div class="hero-actions">
+            <a class="button dark" href="#shop">Explore Bestsellers <span>↗</span></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1619451334792-150fd785ee74?auto=format&fit=crop&w=1400&q=90" alt="Ayzan skincare essentials bathed in warm sunlight">
+        </div>
+      </section>
+
+      <!-- The Product Collection / Shop Section -->
+      <section class="edit section" id="shop">
+        <div class="section-head">
+          <div>
+            <p class="micro">CURATED EDIT — BANGLADESH BESTSELLERS</p>
+            <h2>Meet your daily<br><em>essentials.</em></h2>
+          </div>
+          <span class="currency-tag">All prices in BDT (৳)</span>
+        </div>
+
+        <!-- Shop Controls: Live Search & Category Filter Pills -->
+        <div class="shop-toolbar">
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="productSearch" placeholder="Search by product, brand, ingredient (Snail Mucin, Centella, Niacinamide)..." aria-label="Search skincare" />
+          </div>
+          <div class="filter-pills" id="filterPills">
+            <button class="filter-pill active" data-cat="all">All Bestsellers (32)</button>
+            <button class="filter-pill" data-cat="sunscreen">Sun Protection ☀️ (5)</button>
+            <button class="filter-pill" data-cat="serums">Serums & Actives ✨ (9)</button>
+            <button class="filter-pill" data-cat="cleansers">Gentle Cleansers 💧 (7)</button>
+            <button class="filter-pill" data-cat="moisturizers">Moisturizers & Creams 🌿 (5)</button>
+            <button class="filter-pill" data-cat="toners">Toners & Essences 🌸 (6)</button>
+          </div>
+        </div>
+
+        <!-- Products Grid Container -->
+        <div class="products" id="productList">
+          <!-- Populated dynamically by vanilla.js -->
+        </div>
+      </section>
+
+      <!-- Brand Story -->
+      <section class="story" id="story">
+        <div class="story-photo">
+          <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=1200&q=88" alt="Luminous, radiant complexion">
+        </div>
+        <div class="story-copy">
+          <p class="micro">THE AYZAN PHILOSOPHY</p>
+          <h2>Quiet rituals.<br><em>Visible skin health.</em></h2>
+          <p>We believe skincare in Bangladesh should be an intentional pause in your day, not a stressful guesswork. Every formula featured on Ayzan is hand-selected and verified 100% authentic to perform flawlessly in our subtropical climate — lightweight, deeply hydrating, and non-comedogenic.</p>
+          <p class="sub-story">For personalized skin consultations, order updates, or corporate requests, reach our founder's desk directly at <a href="mailto:her.skincare@ayzan.me" class="inline-mail">her.skincare@ayzan.me</a>.</p>
+          <a class="button outline" href="#shop">Explore All Formulations <span>↗</span></a>
+        </div>
+      </section>
+
+      <!-- Skincare Ritual Flow -->
+      <section class="ritual section" id="ritual">
+        <div class="ritual-top">
+          <p class="micro">THE 3-STEP AYZAN RITUAL</p>
+          <h2>A little time,<br><em>beautifully spent.</em></h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span>STEP 01</span>
+            <h3>Melt & Cleanse</h3>
+            <p>Wash away dust, pollution, and excess sebum with our pH-balanced, gentle foaming cleansers.</p>
+          </div>
+          <div class="step photo-step">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85" alt="Clean refreshing water splash on skin">
+          </div>
+          <div class="step">
+            <span>STEP 02</span>
+            <h3>Infuse & Target</h3>
+            <p>Layer Rice Toners and concentrated Niacinamide or Snail Mucin serums for deep barrier repair and glass glow.</p>
+          </div>
+          <div class="step">
+            <span>STEP 03</span>
+            <h3>Lock & Protect</h3>
+            <p>Seal with Centella Gel Creams and high-protection SPF 50+ PA++++ with zero white cast before stepping out.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bangladesh Payments & Delivery Section -->
+      <section class="payment-section" id="payments">
+        <div class="payment-container">
+          <div class="payment-header">
+            <p class="micro">ORDERING & FULFILLMENT IN BANGLADESH</p>
+            <h2>Seamless local payments,<br><em>delivered to your doorstep.</em></h2>
+            <p class="payment-intro">Order with complete peace of mind. We ship nationwide across all 64 districts in Bangladesh with rapid tracking, trusted payment channels, and authentic verification.</p>
+          </div>
+
+          <!-- Primary Guarantees: 🚚 Shipping & 🛡️ Support -->
+          <div class="payment-guarantees-grid">
+            <div class="guarantee-card shipping-card">
+              <div class="guarantee-icon-badge">🚚</div>
+              <div class="guarantee-content">
+                <div class="guarantee-header-row">
+                  <h4>Fast Nationwide Shipping</h4>
+                  <span class="guarantee-pill">Express Dispatch</span>
+                </div>
+                <p class="guarantee-text">
+                  Inside Dhaka: <strong>24–48 hours (৳70)</strong> &nbsp;|&nbsp; Outside Dhaka: <strong>48–72 hours (৳130)</strong>.
+                </p>
+                <div class="guarantee-perk-row">
+                  <span class="free-shipping-tag">✨ FREE over ৳2,500!</span>
+                  <span class="guarantee-subtext">Doorstep delivery across all 64 districts</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="guarantee-card support-card" id="contact">
+              <div class="guarantee-icon-badge">🛡️</div>
+              <div class="guarantee-content">
+                <div class="guarantee-header-row">
+                  <h4>Direct Customer Support</h4>
+                  <span class="guarantee-pill concierge-pill">Live Concierge</span>
+                </div>
+                <p class="guarantee-text">
+                  Concierge assistance at <a href="mailto:her.skincare@ayzan.me" class="guarantee-mail-link">her.skincare@ayzan.me</a> or via our AI Skin Advisor.
+                </p>
+                <div class="guarantee-perk-row">
+                  <a href="mailto:her.skincare@ayzan.me" class="guarantee-action-btn">
+                    <span>Email Support</span>
+                    <span class="arrow-glyph">↗</span>
+                  </a>
+                  <button type="button" class="guarantee-advisor-btn" onclick="window.openAdvisorChat ? window.openAdvisorChat() : document.querySelector('#openAdvisorBtn')?.click()">
+                    <span>AI Skin Advisor</span>
+                    <span class="sparkle-glyph">✦</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Four Boxes Horizontally Under 🚚 Shipping & 🛡️ Support (Bangla Removed) -->
+          <div class="payment-cards-preview">
+            <div class="pay-chip bkash-chip">
+              <div class="chip-identity">
+                <span class="chip-dot"></span>
+                <strong>bKash</strong>
+              </div>
+              <small>Send Money / TrxID</small>
+            </div>
+            <div class="pay-chip nagad-chip">
+              <div class="chip-identity">
+                <span class="chip-dot"></span>
+                <strong>Nagad</strong>
+              </div>
+              <small>Instant MFS</small>
+            </div>
+            <div class="pay-chip rocket-chip">
+              <div class="chip-identity">
+                <span class="chip-dot"></span>
+                <strong>Rocket</strong>
+              </div>
+              <small>Dutch-Bangla Bank</small>
+            </div>
+            <div class="pay-chip security-chip">
+              <div class="chip-identity">
+                <span class="chip-dot"></span>
+                <strong>100% Verified MFS</strong>
+              </div>
+              <small>Instant Confirmation</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust Marquee (Fulfillment & Ordering in Bangladesh) -->
+      <section class="marquee">
+        <span>100% Authentic Imports</span>
+        <i>✦</i>
+        <span>Instant MFS Payment Verification</span>
+        <i>✦</i>
+        <span>Free Delivery Over ৳2,500</span>
+        <i>✦</i>
+        <span>Dermatologist Approved</span>
+        <i>✦</i>
+        <span>Top Bestsellers from Korea & UK</span>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="journal">
+        <div>
+          <p class="micro">THE AYZAN DISPATCH</p>
+          <h2>Stay close to<br><em>the good stuff.</em></h2>
+          <p class="journal-sub">Early access to small-batch Korean skincare drops, seasonal routine guides, and private VIP member privileges in Bangladesh.</p>
+        </div>
+        <form id="subscribe">
+          <label for="email">A gentle note for your inbox.</label>
+          <div>
+            <input id="email" type="email" required placeholder="Enter your email address" />
+            <button type="submit" aria-label="Subscribe">→</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-brand-col">
+          <a class="brand" href="#top">
+            <img src="/logo.png" alt="AYZAN Logo" class="brand-logo-img footer-logo-img" />
+            <span class="brand-text">AYZAN</span>
+          </a>
+          <p class="tagline">Pure Skin in its Best Light. Authentic skincare rituals for Bangladesh.</p>
+          <p class="contact-line">Direct inquiries: <a href="mailto:her.skincare@ayzan.me">her.skincare@ayzan.me</a></p>
+        </div>
+        <div class="footer-links-col">
+          <strong>Navigation</strong>
+          <a href="#shop">Bestselling Formulations</a>
+          <a href="#ritual">The 3-Step Ritual</a>
+          <a href="#story">Our Philosophy</a>
+          <a href="#payments">Payment & Shipping FAQ</a>
+        </div>
+        <div class="footer-mfs-col">
+          <strong>Accepted in Bangladesh</strong>
+          <div class="mfs-pills">
+            <span>bKash</span>
+            <span>Nagad</span>
+            <span>Rocket</span>
+          </div>
+          <p class="copyright">© 2026 AYZAN Skincare (ayzan.me). All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Slide-out Cart & Checkout Drawer -->
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Bag">
+      <div class="drawer-header">
+        <div class="drawer-header-brand">
+          <img src="/logo.png" alt="AYZAN" class="drawer-header-logo" />
+          <h3>Your Ritual Bag (<span id="drawerCount">0</span>)</h3>
+        </div>
+        <button class="close-drawer-btn" id="closeDrawer" aria-label="Close bag">×</button>
+      </div>
+
+      <div class="drawer-body">
+        <!-- Free Shipping Progress Bar -->
+        <div class="free-shipping-container" id="freeShippingContainer">
+          <div class="free-shipping-text" id="freeShippingText">
+            Add <strong>৳ 2,500</strong> for <strong>FREE Nationwide Delivery</strong> 🚚
+          </div>
+          <div class="free-shipping-track">
+            <div class="free-shipping-fill" id="freeShippingFill" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- Item List -->
+        <div class="cart-items" id="cartItems">
+          <div class="empty-state">
+            <div class="empty-icon">🛍️</div>
+            <p>Your skincare bag is currently empty.</p>
+            <a class="button dark empty-shop-btn" href="#shop" id="emptyShopBtn">Explore Bestsellers <span>↗</span></a>
+          </div>
+        </div>
+
+        <!-- Checkout Form (Shows when items > 0) -->
+        <div class="checkout-section" id="checkoutSection" style="display: none;">
+          <div class="checkout-divider"><span>Delivery & Checkout Details</span></div>
+          
+          <form id="orderForm">
+            <!-- Customer Information -->
+            <div class="form-group">
+              <label for="custName">Full Name *</label>
+              <input type="text" id="custName" required placeholder="e.g. Nusrat Jahan" />
+            </div>
+
+            <div class="form-group">
+              <label for="custPhone">Phone Number * (01XXXXXXXXX)</label>
+              <input type="tel" id="custPhone" required pattern="01[3-9][0-9]{8}" placeholder="017XXXXXXXX" />
+            </div>
+
+            <div class="form-group">
+              <label for="custAddress">Full Delivery Address *</label>
+              <textarea id="custAddress" rows="2" required placeholder="House, Road, Area, Thana, District (All 64 districts)"></textarea>
+            </div>
+
+            <!-- Delivery Zone Selection -->
+            <div class="form-group">
+              <label>Delivery Area in Bangladesh *</label>
+              <div class="zone-selector">
+                <label class="zone-option">
+                  <input type="radio" name="deliveryZone" value="70" checked />
+                  <div class="zone-card">
+                    <strong>Inside Dhaka</strong>
+                    <span>৳ 70 (24–48h)</span>
+                  </div>
+                </label>
+                <label class="zone-option">
+                  <input type="radio" name="deliveryZone" value="130" />
+                  <div class="zone-card">
+                    <strong>Outside Dhaka</strong>
+                    <span>৳ 130 (2–3 days)</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Payment Method Selection -->
+            <div class="form-group">
+              <label>Payment Method (Advance MFS) *</label>
+              <div class="payment-method-selector">
+                <label class="method-option">
+                  <input type="radio" name="payMethod" value="bKash" checked />
+                  <div class="method-card bkash-card">
+                    <span class="method-title">🌸 bKash</span>
+                    <small>Send Money & enter Transaction ID</small>
+                  </div>
+                </label>
+
+                <label class="method-option">
+                  <input type="radio" name="payMethod" value="Nagad" />
+                  <div class="method-card nagad-card">
+                    <span class="method-title">🟠 Nagad</span>
+                    <small>Instant MFS payment confirmation</small>
+                  </div>
+                </label>
+
+                <label class="method-option">
+                  <input type="radio" name="payMethod" value="Rocket" />
+                  <div class="method-card rocket-card">
+                    <span class="method-title">🟣 Rocket</span>
+                    <small>Dutch-Bangla Bank Mobile Banking</small>
+                  </div>
+                </label>
+              </div>
+
+              <!-- Interactive MFS Payment Instruction Box -->
+              <div class="mfs-box" id="mfsInfoBox" style="display: block;">
+                <div class="mfs-header">
+                  <span class="mfs-title" id="mfsMethodName">bKash Personal</span>
+                  <span class="mfs-payable" id="mfsAmount">৳ 0</span>
+                </div>
+                <div class="mfs-num-card">
+                  <strong id="mfsAccountNum">01712-345678</strong>
+                  <button type="button" class="copy-num-btn" id="copyMfsBtn">Copy Number</button>
+                </div>
+                <p class="mfs-instructions">
+                  1. Open your bKash / Nagad app &rarr; select <strong>Send Money</strong>.<br>
+                  2. Send the exact total payable amount to the number above.<br>
+                  3. Enter the <strong>Transaction ID (TrxID)</strong> below to verify.
+                </p>
+                <div class="trx-input-group" id="trxIdGroup" style="display: block;">
+                  <label for="trxIdInput">Transaction ID (TrxID) *</label>
+                  <input type="text" id="trxIdInput" required placeholder="e.g. BL83K99X1Z" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Optional Order Notes -->
+            <div class="form-group">
+              <label for="orderNotes">Delivery Instructions (Optional)</label>
+              <input type="text" id="orderNotes" placeholder="e.g. Call before delivery / Leave at reception" />
+            </div>
+
+            <!-- Order Summary Calculations -->
+            <div class="order-summary-box">
+              <div class="summary-line">
+                <span>Subtotal:</span>
+                <span id="subtotalVal">৳ 0</span>
+              </div>
+              <div class="summary-line">
+                <span>Delivery Charge:</span>
+                <span id="deliveryVal">৳ 70</span>
+              </div>
+              <div class="summary-line grand-total">
+                <strong>Total Amount:</strong>
+                <strong id="grandTotalVal">৳ 0</strong>
+              </div>
+            </div>
+
+            <button type="submit" class="button dark checkout-submit-btn" id="submitOrderBtn">
+              Confirm & Place Order (৳ <span id="btnTotal">0</span>)
+            </button>
+            <p class="secure-notice">🔒 Secure order placement. Our Dhaka concierge confirms by SMS & Call.</p>
+          </form>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Product Quick-View Modal -->
+    <div class="quickview-backdrop" id="quickViewBackdrop">
+      <div class="quickview-modal" id="quickViewModal">
+        <!-- Content injected dynamically by vanilla.js -->
+      </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div class="order-modal-backdrop" id="orderModalBackdrop">
+      <div class="order-modal">
+        <div class="modal-logo-wrap">
+          <img src="/logo.png" alt="AYZAN" class="modal-brand-logo" />
+        </div>
+        <div class="modal-success-icon">✓</div>
+        <h2>Order Received!</h2>
+        <p class="modal-sub">Thank you for choosing <strong>AYZAN Skincare</strong>. Your authentic ritual package is being carefully prepared.</p>
+        
+        <div class="order-receipt" id="orderReceipt">
+          <!-- Dynamic Order Receipt injected here -->
+        </div>
+
+        <div class="modal-actions">
+          <a class="button dark mail-btn" id="mailOrderBtn">
+            Email Order Confirmation to her.skincare@ayzan.me ↗
+          </a>
+          <button type="button" class="button outline" id="printReceiptBtn" onclick="window.print()">
+            Print / Save Receipt 🖨️
+          </button>
+          <button class="button close-modal-btn" id="closeOrderModal">Done & Back to Store</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Account Authentication Modal (Sign In / Register) -->
+    <div class="auth-modal-backdrop" id="authModalBackdrop">
+      <div class="auth-modal" id="authModal">
+        <button class="close-auth-btn" id="closeAuthBtn" aria-label="Close modal">×</button>
+        
+        <div class="auth-header">
+          <div class="auth-logo-wrap">
+            <img src="/logo.png" alt="AYZAN" class="auth-brand-logo" />
+          </div>
+          <span class="auth-badge">AYZAN RITUAL MEMBER</span>
+          <h2 id="authModalTitle">Welcome to AYZAN</h2>
+          <p class="auth-sub" id="authModalSub">Access saved addresses, past order tracking, and custom skin routines in Bangladesh.</p>
+        </div>
+
+        <!-- Auth Tabs: Sign In / Create Account -->
+        <div class="auth-tabs">
+          <button type="button" class="auth-tab-btn active" id="tabSignInBtn">Sign In</button>
+          <button type="button" class="auth-tab-btn" id="tabRegisterBtn">Create Account</button>
+        </div>
+
+        <!-- Sign In Form Panel -->
+        <div class="auth-panel active" id="signInPanel">
+          <form id="signInForm">
+            <div class="form-group">
+              <label for="loginEmail">Email or BD Phone (01XXXXXXXXX) *</label>
+              <input type="text" id="loginEmail" required placeholder="e.g. nusrat@gmail.com or 017XXXXXXXX" autocomplete="username" />
+            </div>
+
+            <div class="form-group">
+              <div class="label-with-link">
+                <label for="loginPassword">Password *</label>
+                <button type="button" class="forgot-pass-link" id="forgotPassBtn">Forgot?</button>
+              </div>
+              <div class="password-input-wrap">
+                <input type="password" id="loginPassword" required placeholder="Enter your password" autocomplete="current-password" />
+                <button type="button" class="toggle-pass-btn" id="toggleLoginPassBtn" aria-label="Toggle password visibility">👁️</button>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="remember-label">
+                <input type="checkbox" id="rememberMe" checked />
+                <span>Keep me signed in</span>
+              </label>
+            </div>
+
+            <button type="submit" class="button dark auth-submit-btn" id="loginSubmitBtn">
+              Sign In to Your Rituals <span>↗</span>
+            </button>
+          </form>
+
+          <div class="auth-divider"><span>or rapid demo access</span></div>
+
+          <button type="button" class="demo-login-btn" id="demoLoginBtn">
+            ⚡ 1-Click VIP Demo Login (Nusrat Jahan)
+          </button>
+        </div>
+
+        <!-- Create Account Form Panel -->
+        <div class="auth-panel" id="registerPanel">
+          <form id="registerForm">
+            <div class="form-group">
+              <label for="regName">Full Name *</label>
+              <input type="text" id="regName" required placeholder="e.g. Nusrat Jahan" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="regEmail">Email Address *</label>
+                <input type="email" id="regEmail" required placeholder="name@domain.com" />
+              </div>
+              <div class="form-group">
+                <label for="regPhone">Phone (01XXXXXXXXX) *</label>
+                <input type="tel" id="regPhone" required pattern="01[3-9][0-9]{8}" placeholder="017XXXXXXXX" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="regZone">Primary Delivery Area in Bangladesh *</label>
+              <select id="regZone">
+                <option value="70">Inside Dhaka (৳70 delivery)</option>
+                <option value="130">Outside Dhaka - All 64 Districts (৳130 delivery)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="regAddress">Full Delivery Address (Auto-saves for 1-click checkout)</label>
+              <textarea id="regAddress" rows="2" placeholder="House, Road, Area, District"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="regSkinType">Primary Skin Profile (Optional)</label>
+              <select id="regSkinType">
+                <option value="oily">Oily & Acne-Prone (BD Humidity)</option>
+                <option value="dry">Dry & Dull (Requires Glass Glow)</option>
+                <option value="combination" selected>Combination Skin</option>
+                <option value="sensitive">Sensitive & Barrier Damaged</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="regPassword">Create Password (min. 6 characters) *</label>
+              <div class="password-input-wrap">
+                <input type="password" id="regPassword" required minlength="6" placeholder="Choose a password" />
+                <button type="button" class="toggle-pass-btn" id="toggleRegPassBtn" aria-label="Toggle password visibility">👁️</button>
+              </div>
+            </div>
+
+            <div class="form-options">
+              <label class="remember-label">
+                <input type="checkbox" id="regOptIn" checked />
+                <span>Receive VIP drops, restock alerts, and personalized advice</span>
+              </label>
+            </div>
+
+            <button type="submit" class="button dark auth-submit-btn" id="regSubmitBtn">
+              Create Account & Join VIP <span>↗</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- User Account Dashboard Modal -->
+    <div class="auth-modal-backdrop" id="accountModalBackdrop">
+      <div class="auth-modal account-dashboard-modal" id="accountModal">
+        <button class="close-auth-btn" id="closeAccountModalBtn" aria-label="Close modal">×</button>
+        
+        <div class="account-profile-header">
+          <div class="account-avatar-wrap">
+            <div class="account-avatar" id="dashAvatar">NJ</div>
+            <img src="/logo.png" alt="AYZAN VIP" class="account-verified-butterfly" title="AYZAN VIP Member" />
+          </div>
+          <div class="account-profile-info">
+            <h3 id="dashName">Nusrat Jahan</h3>
+            <p id="dashEmail">nusrat@gmail.com • <span class="vip-tag">AYZAN VIP Member</span></p>
+          </div>
+        </div>
+
+        <div class="account-tabs">
+          <button type="button" class="auth-tab-btn active" id="tabDashOrdersBtn">Orders & Tracking (<span id="dashOrdersCount">0</span>)</button>
+          <button type="button" class="auth-tab-btn" id="tabDashProfileBtn">Saved Profile</button>
+        </div>
+
+        <!-- Orders List Panel -->
+        <div class="auth-panel active" id="dashOrdersPanel">
+          <div class="dash-orders-list" id="dashOrdersList">
+            <!-- Dynamic past orders rendered here -->
+          </div>
+        </div>
+
+        <!-- Saved Profile Panel -->
+        <div class="auth-panel" id="dashProfilePanel">
+          <form id="updateProfileForm">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" id="editName" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="editEmail" required />
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="editPhone" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Default Delivery Area</label>
+              <select id="editZone">
+                <option value="70">Inside Dhaka (৳70)</option>
+                <option value="130">Outside Dhaka (৳130)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Default Delivery Address</label>
+              <textarea id="editAddress" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Skin Type Profile</label>
+              <select id="editSkinType">
+                <option value="oily">Oily & Acne-Prone</option>
+                <option value="dry">Dry & Dull Glass Glow</option>
+                <option value="combination">Combination Skin</option>
+                <option value="sensitive">Sensitive / Barrier Repair</option>
+              </select>
+            </div>
+            <button type="submit" class="button dark" style="width: 100%;">Save Profile Changes</button>
+          </form>
+        </div>
+
+        <div class="account-footer-actions">
+          <button type="button" class="button outline" id="askAdvisorWithProfileBtn">✨ Ask Advisor for My Skin</button>
+          <button type="button" class="button sign-out-btn" id="signOutBtn">Sign Out</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating AI Skin Advisor Widget Button -->
+    <button class="advisor-floating-btn" id="openAdvisorBtn" aria-label="Open Skin Advisor">
+      <img src="/logo.png" alt="Advisor" class="advisor-btn-logo" />
+      <span class="advisor-badge-dot"></span>
+      <span class="advisor-tooltip">Ask Skin Advisor ✨</span>
+    </button>
+
+    <!-- AYZAN Skin Advisor Chat Window -->
+    <div class="advisor-chat-window" id="advisorChatWindow">
+      <div class="advisor-chat-header">
+        <div class="advisor-header-info">
+          <div class="advisor-avatar">
+            <img src="/logo.png" alt="AYZAN" class="advisor-avatar-logo" />
+          </div>
+          <div>
+            <h4>AYZAN Skin Advisor</h4>
+            <p><span class="online-indicator"></span> Active • Routine Guide for Bangladesh</p>
+          </div>
+        </div>
+        <button class="advisor-close-btn" id="closeAdvisorBtn" aria-label="Close chat">✕</button>
+      </div>
+
+      <div class="advisor-chat-body" id="advisorChatBody">
+        <div class="advisor-message bot-message">
+          <div class="message-content">
+            <p>Hello! I am your <strong>AYZAN Skin Advisor</strong> 🌸</p>
+            <p>I can help you build the ideal routine for your skin type in Bangladesh's climate. Pick a topic below or type your question:</p>
+          </div>
+        </div>
+
+        <div class="advisor-quick-pills" id="advisorQuickPills">
+          <button class="quick-pill" data-query="Oily & Acne-Prone Skin routine in BD humidity">Oily & Acne Skin 💧</button>
+          <button class="quick-pill" data-query="Best Sunscreen with Zero White Cast">No-Cast Sunscreen ☀️</button>
+          <button class="quick-pill" data-query="How to fade dark spots and acne scars">Fade Dark Spots ✨</button>
+          <button class="quick-pill" data-query="Damaged skin barrier repair routine">Barrier Repair 🌿</button>
+          <button class="quick-pill" data-query="Dry and dull skin glow routine">Dry & Dull Skin 🍯</button>
+          <button class="quick-pill contact-pill-btn" data-query="I want to contact a real human person">Talk to Human Concierge 👤</button>
+        </div>
+      </div>
+
+      <form class="advisor-chat-footer" id="advisorChatForm">
+        <input type="text" id="advisorInput" placeholder="Ask about skin type, concerns, or products..." autocomplete="off" />
+        <button type="submit" id="advisorSendBtn" aria-label="Send message">➤</button>
+      </form>
+    </div>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <div class="mobile-bottom-bar">
+      <a href="#top" class="mobile-nav-item active">
+        <span class="icon">⌂</span>
+        <span>Home</span>
+      </a>
+      <a href="#shop" class="mobile-nav-item">
+        <span class="icon">◈</span>
+        <span>Shop</span>
+      </a>
+      <button type="button" class="mobile-nav-item" id="bottomBagBtn" onclick="window.openCart ? window.openCart() : document.querySelector('#bag')?.click()">
+        <span class="icon">⌑</span>
+        <span>Bag</span>
+        <span class="badge-bubble" id="bottomBagCount">0</span>
+      </button>
+      <button type="button" class="mobile-nav-item" id="bottomAdvisorBtn" onclick="window.openAdvisorChat ? window.openAdvisorChat() : document.querySelector('#openAdvisorBtn')?.click()">
+        <span class="icon"><img src="/logo.png" alt="Advisor" class="mobile-bottom-logo" /></span>
+        <span>Advisor</span>
+      </button>
+      <button type="button" class="mobile-nav-item" id="bottomAccountBtn">
+        <span class="icon">👤</span>
+        <span id="bottomAccountLabel">Account</span>
+      </button>
+    </div>
+
+    <!-- Main Logic Script -->
+    <script type="module" src="/src/vanilla.js"></script>
+  </body>
+</html>
