@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ayzan",
+  "compatibility_date": "2024-09-23",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    {
+      "pattern": "ayzan.me/*",
+      "zone_name": "ayzan.me"
+    },
+    {
+      "pattern": "www.ayzan.me/*",
+      "zone_name": "ayzan.me"
+    }
+  ]
+}
