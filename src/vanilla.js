@@ -1495,7 +1495,7 @@ if (orderForm) {
     const phone = document.querySelector('#custPhone').value.trim();
     const address = document.querySelector('#custAddress').value.trim();
     const instructions = document.querySelector('#orderNotes').value.trim();
-    const zoneVal = document.querySelector('input[name="deliveryZone"]:checked').value;
+    const zoneVal = document.querySelector('input[name="deliveryZone"]:checked')?.value || '70';
     const zoneName = zoneVal === '70' ? 'Inside Dhaka' : 'Outside Dhaka (Nationwide)';
     const payMethod = document.querySelector('input[name="payMethod"]:checked')?.value || 'bKash';
     const trxId = trxIdInput ? trxIdInput.value.trim() : '';
