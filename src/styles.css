@@ -4135,3 +4135,371 @@ footer {
 }
 
 
+
+/* ============================================================
+
+/* ============================================================
+   SOCIAL CIRCLE BUTTONS — Small premium discs (footer + mobile drawer)
+   ============================================================ */
+.footer-social-circles {
+  display: flex;
+  gap: 10px;
+  margin: 14px 0 10px;
+  flex-wrap: wrap;
+}
+
+.mobile-social-drawer {
+  margin-top: auto;
+  padding-top: 22px;
+  border-top: 1px solid rgba(34, 28, 26, 0.1);
+}
+
+.mobile-social-label {
+  display: block;
+  font: 600 10px/1 var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9e8a82;
+  margin-bottom: 10px;
+}
+
+.social-circle-row {
+  display: flex;
+  gap: 10px;
+}
+
+.social-circle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  flex-shrink: 0;
+}
+
+.social-circle-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.social-circle-btn:active {
+  transform: scale(0.96);
+}
+
+/* Instagram gradient disc */
+.insta-circle {
+  background: radial-gradient(circle at 30% 107%,
+    #fdf497 0%, #fdf497 5%,
+    #fd5949 45%, #d6249f 60%,
+    #285AEB 90%);
+  color: #fff;
+}
+
+/* TikTok dark disc */
+.tiktok-circle {
+  background: #010101;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.tiktok-circle::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 242, 234, 0.13) 0%, rgba(255, 0, 79, 0.13) 100%);
+}
+
+.tiktok-circle svg {
+  position: relative;
+  z-index: 1;
+}
+
+/* Facebook blue disc */
+.fb-circle {
+  background: #1877f2;
+  color: #fff;
+}
+
+/* ============================================================
+   PAYMENT SECTION — Premium Disc-Style Cards
+   ============================================================ */
+.payment-section {
+  background: linear-gradient(160deg, #fdf7f3 0%, #f9ede6 100%);
+  padding: 96px 6vw 80px;
+}
+
+.payment-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.payment-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.payment-header h2 {
+  font: italic 700 40px/1.1 var(--serif);
+  margin: 8px 0 14px;
+  color: var(--ink);
+}
+
+.payment-intro {
+  color: #7a6760;
+  font-size: 15px;
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+.payment-guarantees-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 44px;
+}
+
+.guarantee-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px 26px;
+  border: 1px solid rgba(34, 28, 26, 0.08);
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  box-shadow: 0 2px 16px rgba(34, 28, 26, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.guarantee-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(34, 28, 26, 0.1);
+}
+
+.guarantee-icon-badge {
+  font-size: 26px;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  background: var(--blush);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guarantee-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.guarantee-header-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 7px;
+}
+
+.guarantee-header-row h4 {
+  font: 600 15px/1.2 var(--sans);
+  margin: 0;
+  color: var(--ink);
+}
+
+.guarantee-pill {
+  font: 600 10px/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 20px;
+  background: var(--blush);
+  color: var(--clay);
+}
+
+.concierge-pill {
+  background: #e8f4fd;
+  color: #1877f2;
+}
+
+.guarantee-text {
+  font-size: 13px;
+  color: #7a6760;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+
+.guarantee-perk-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.free-shipping-tag {
+  font: 600 12px/1.3 var(--sans);
+  color: var(--clay);
+  background: linear-gradient(90deg, #fde8e0, #f9d5c8);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.guarantee-subtext {
+  font-size: 11.5px;
+  color: #a0908a;
+}
+
+.guarantee-mail-link {
+  color: var(--clay);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.guarantee-action-btn,
+.guarantee-advisor-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font: 600 12px/1 var(--sans);
+  cursor: pointer;
+  transition: background 0.18s, transform 0.15s;
+  border: none;
+  text-decoration: none;
+}
+
+.guarantee-action-btn {
+  background: var(--ink);
+  color: #fdf7f3;
+}
+
+.guarantee-action-btn:hover {
+  background: #3a2e2a;
+  transform: scale(1.03);
+}
+
+.guarantee-advisor-btn {
+  background: var(--blush);
+  color: var(--ink);
+}
+
+.guarantee-advisor-btn:hover {
+  background: var(--sand);
+}
+
+/* Payment Method Disc Row — matching social circle design language */
+.payment-cards-preview {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0 4px;
+}
+
+.pay-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: none;
+  cursor: default;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.13);
+  gap: 4px;
+}
+
+.pay-chip:hover {
+  transform: translateY(-4px) scale(1.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22);
+}
+
+.chip-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.chip-dot {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.65);
+  margin-bottom: 2px;
+}
+
+.pay-chip strong {
+  font: 700 11.5px/1 var(--sans);
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+
+.pay-chip small {
+  font: 500 9px/1.3 var(--mono);
+  color: rgba(255, 255, 255, 0.82);
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 0 6px;
+}
+
+/* bKash — pink disc */
+.bkash-chip {
+  background: radial-gradient(circle at 38% 38%, #ff5fa3 0%, #e2136e 60%, #b00e55 100%);
+}
+
+/* Nagad — orange disc */
+.nagad-chip {
+  background: radial-gradient(circle at 38% 38%, #ffc46e 0%, #f7921e 55%, #c8720e 100%);
+}
+
+/* Rocket — purple disc */
+.rocket-chip {
+  background: radial-gradient(circle at 38% 38%, #c47ad8 0%, #8c3494 55%, #62226a 100%);
+}
+
+/* Security verified — dark earth disc */
+.security-chip {
+  background: radial-gradient(circle at 38% 38%, #7a8f76 0%, #4a6045 55%, #2e3e2b 100%);
+}
+
+/* Mobile overrides */
+@media (max-width: 600px) {
+  .pay-chip {
+    width: 78px !important;
+    height: 78px !important;
+  }
+
+  .pay-chip strong {
+    font-size: 10.5px !important;
+  }
+
+  .payment-cards-preview {
+    gap: 12px !important;
+  }
+
+  .payment-guarantees-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .payment-section {
+    padding: 60px 18px 50px !important;
+  }
+
+  .payment-header h2 {
+    font-size: 28px !important;
+  }
+}

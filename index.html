@@ -39,6 +39,10 @@
         <a href="mailto:her.skincare@ayzan.me" class="nav-contact">Contact</a>
       </nav>
       <div class="header-right">
+        <button class="wishlist-btn" id="wishlistBtn" aria-label="My Wishlist" title="View Saved Rituals">
+          <span class="wishlist-icon">♡</span>
+          <span class="wishlist-text">Wishlist (<b id="wishlistCount">0</b>)</span>
+        </button>
         <button class="account-btn" id="accountBtn" aria-label="My Account">
           <span class="account-icon">👤</span>
           <span class="account-name" id="accountName">Sign In</span>
@@ -60,10 +64,13 @@
         <button class="icon-btn" id="closeMenu" aria-label="Close menu">×</button>
       </div>
       <button class="mobile-account-link" id="mobileAccountBtn">👤 Sign In / My Account</button>
+      <button class="mobile-account-link mobile-wishlist-link" id="mobileWishlistBtn">♡ My Wishlist (<span id="mobileWishlistCount">0</span>)</button>
       <a href="#shop">Bestsellers</a>
       <a href="#ritual">Rituals</a>
       <a href="#story">Our Story</a>
       <a href="#payments">Payments & Shipping</a>
+      <a href="/terms.html">Terms & Conditions</a>
+      <a href="/privacy.html">Privacy Policy</a>
       <a href="#community">Community & Socials</a>
       <a href="mailto:her.skincare@ayzan.me">Contact Us</a>
 
@@ -127,7 +134,7 @@
             <input type="text" id="productSearch" placeholder="Search by product, brand, ingredient (Snail Mucin, Centella, Niacinamide)..." aria-label="Search skincare" />
           </div>
           <div class="filter-pills" id="filterPills">
-            <button class="filter-pill active" data-cat="all">All Bestsellers (32)</button>
+            <button class="filter-pill active" data-cat="all">All Bestsellers (48)</button>
             <button class="filter-pill" data-cat="sunscreen">Sun Protection ☀️ (5)</button>
             <button class="filter-pill" data-cat="serums">Serums & Actives ✨ (9)</button>
             <button class="filter-pill" data-cat="cleansers">Gentle Cleansers 💧 (7)</button>
@@ -332,11 +339,13 @@
           <p class="contact-line">Direct inquiries: <a href="mailto:her.skincare@ayzan.me">her.skincare@ayzan.me</a></p>
         </div>
         <div class="footer-links-col">
-          <strong>Navigation</strong>
+          <strong>Navigation & Policies</strong>
           <a href="#shop">Bestselling Formulations</a>
           <a href="#ritual">The 3-Step Ritual</a>
           <a href="#story">Our Philosophy</a>
           <a href="#payments">Payment & Shipping FAQ</a>
+          <a href="/terms.html">Terms & Conditions</a>
+          <a href="/privacy.html">Privacy Policy</a>
         </div>
         <div class="footer-mfs-col">
           <strong>Accepted in Bangladesh</strong>
@@ -344,6 +353,7 @@
             <span>bKash</span>
             <span>Nagad</span>
             <span>Rocket</span>
+            <span>Cash on Delivery</span>
           </div>
           <p class="copyright">© 2026 AYZAN Skincare (ayzan.me). All rights reserved.</p>
         </div>
@@ -389,7 +399,7 @@
             <!-- Customer Information -->
             <div class="form-group">
               <label for="custName">Full Name *</label>
-              <input type="text" id="custName" required placeholder="e.g. Nusrat Jahan" />
+              <input type="text" id="custName" required placeholder="e.g. Rain" />
             </div>
 
             <div class="form-group">
@@ -505,6 +515,30 @@
       </div>
     </aside>
 
+    <!-- Slide-out Wishlist Drawer -->
+    <div class="cart-backdrop" id="wishlistBackdrop"></div>
+    <aside class="cart-drawer wishlist-drawer" id="wishlistDrawer" aria-label="Saved Wishlist">
+      <div class="drawer-header">
+        <div class="drawer-header-brand">
+          <span class="wishlist-header-heart">♡</span>
+          <h3>Saved Formulations (<span id="wishlistDrawerCount">0</span>)</h3>
+        </div>
+        <button class="close-drawer-btn" id="closeWishlistDrawer" aria-label="Close wishlist">×</button>
+      </div>
+
+      <div class="drawer-body">
+        <div class="wishlist-items" id="wishlistItems">
+          <!-- Populated dynamically by vanilla.js -->
+        </div>
+      </div>
+
+      <div class="drawer-footer wishlist-drawer-footer" id="wishlistDrawerFooter" style="display: none;">
+        <button type="button" class="button dark move-all-btn" id="moveAllToBagBtn">
+          Move All to Bag 🛍️
+        </button>
+      </div>
+    </aside>
+
     <!-- Product Quick-View Modal -->
     <div class="quickview-backdrop" id="quickViewBackdrop">
       <div class="quickview-modal" id="quickViewModal">
@@ -563,7 +597,7 @@
           <form id="signInForm">
             <div class="form-group">
               <label for="loginEmail">Email or BD Phone (01XXXXXXXXX) *</label>
-              <input type="text" id="loginEmail" required placeholder="e.g. nusrat@gmail.com or 017XXXXXXXX" autocomplete="username" />
+              <input type="text" id="loginEmail" required placeholder="e.g. rain@ayzan.me or 017XXXXXXXX" autocomplete="username" />
             </div>
 
             <div class="form-group">
@@ -592,7 +626,7 @@
           <div class="auth-divider"><span>or rapid demo access</span></div>
 
           <button type="button" class="demo-login-btn" id="demoLoginBtn">
-            ⚡ 1-Click VIP Demo Login (Nusrat Jahan)
+            ⚡ 1-Click VIP Demo Login (Rain)
           </button>
         </div>
 
@@ -601,7 +635,7 @@
           <form id="registerForm">
             <div class="form-group">
               <label for="regName">Full Name *</label>
-              <input type="text" id="regName" required placeholder="e.g. Nusrat Jahan" />
+              <input type="text" id="regName" required placeholder="e.g. Rain" />
             </div>
 
             <div class="form-row">
@@ -668,12 +702,12 @@
         
         <div class="account-profile-header">
           <div class="account-avatar-wrap">
-            <div class="account-avatar" id="dashAvatar">NJ</div>
+            <div class="account-avatar" id="dashAvatar">R</div>
             <img src="/logo.png" alt="AYZAN VIP" class="account-verified-butterfly" title="AYZAN VIP Member" />
           </div>
           <div class="account-profile-info">
-            <h3 id="dashName">Nusrat Jahan</h3>
-            <p id="dashEmail">nusrat@gmail.com • <span class="vip-tag">AYZAN VIP Member</span></p>
+            <h3 id="dashName">Rain</h3>
+            <p id="dashEmail">rain@ayzan.me • <span class="vip-tag">AYZAN VIP Member</span></p>
           </div>
         </div>
 

@@ -1,4 +1,4 @@
-// ==========================================================================
+﻿// ==========================================================================
 // AYZAN SKINCARE (ayzan.me) - E-Commerce Engine & Bangladesh Payment System
 // ==========================================================================
 
@@ -611,6 +611,264 @@ export const PRODUCTS = [
     description: 'The strongest OTC acne wash recommended by dermatologists across Bangladesh. Kills acne-causing bacteria on contact, unclogs congested pores, and prevents new breakouts on both face and body.',
     keyIngredients: '10% Benzoyl Peroxide (Active), Glycerin, Carbomer, Sodium Cocoyl Isethionate',
     howToUse: 'Wet area to be cleansed. Apply wash and gently massage area for 1–2 minutes. Rinse thoroughly and pat dry. Start with once daily.'
+  },
+
+
+  // ── Extra Sunscreens ───────────────────────────────────────────
+  {
+    id: 'skin1004-centella-sun-stick',
+    name: 'SKIN1004 Madagascar Centella Sun Stick SPF 50+ PA++++',
+    brand: 'SKIN1004',
+    origin: 'South Korea 🇰🇷',
+    category: 'sunscreen',
+    price: 1390,
+    volume: '18g',
+    rating: 4.8,
+    reviews: 940,
+    badge: 'Cooling Stick SPF',
+    concerns: ['Midday Reapply', 'Soothing Shield', 'Glow Finish'],
+    bgTone: 'amber',
+    img: 'https://www.skin1004.com/cdn/shop/files/skin1004-sun-centella-sun-stick-spf50-pa-1260087893.png?v=1786012993',
+    tagline: '100% Madagascar Centella + SPF 50+ Cooling Sun Stick',
+    description: 'A travel-friendly centella sun stick that soothes and protects in one swipe. Melts effortlessly into skin for a dewy finish ideal for Bangladesh\'\'s harsh midday UV index.',
+    keyIngredients: 'Centella Asiatica Extract, Niacinamide, Panthenol, Sodium Hyaluronate',
+    howToUse: 'Twist up and apply directly to face and neck before outdoor activities. Reapply every 2–3 hours.'
+  },
+  {
+    id: 'isntree-hyaluronic-acid-sun',
+    name: 'Isntree Hyaluronic Acid Watery Sun Gel SPF 50+ PA++++',
+    brand: 'Isntree',
+    origin: 'South Korea 🇰🇷',
+    category: 'sunscreen',
+    price: 1290,
+    volume: '50ml',
+    rating: 4.8,
+    reviews: 1070,
+    badge: 'Water-Bomb SPF',
+    concerns: ['Ultra-Lightweight', 'Glass Glow SPF', 'Oily Skin'],
+    bgTone: 'olive',
+    img: 'https://isntree.com/cdn/shop/files/hyaluronic-acid-sun-gel-spf50-pa-isntree-official-website-1_1024x.jpg',
+    tagline: '5-Type Hyaluronic Acid Complex + Aqua Shield UV Gel',
+    description: 'A water-bomb sunscreen gel that feels like pure moisture while offering maximum SPF 50+ PA++++ defense. Non-sticky satin finish perfect for oily skin in Bangladesh humidity.',
+    keyIngredients: '5-Type Hyaluronic Acid Complex, Niacinamide, Centella Asiatica, Aloe Vera Leaf Extract',
+    howToUse: 'As the final step of morning skincare, apply evenly onto face and neck 15 minutes before sun exposure.'
+  },
+  {
+    id: 'anua-heartleaf-airy-sun',
+    name: 'Anua Heartleaf Airy-Fit Sun Serum SPF 50+ PA++++',
+    brand: 'Anua',
+    origin: 'South Korea 🇰🇷',
+    category: 'sunscreen',
+    price: 1490,
+    volume: '40ml',
+    rating: 4.9,
+    reviews: 1560,
+    badge: 'Blurring Skin Veil',
+    concerns: ['Pore Blur', 'Sensitive Shield', 'Zero Stickiness'],
+    bgTone: 'peach',
+    img: 'https://anua.com/cdn/shop/files/anua-us-sun-heartleaf-airy-fit-sun-serum-1273403099_2000x.jpg?v=1781614965',
+    tagline: '77% Heartleaf Extract + Pore-Blurring Airy Sun Veil',
+    description: 'A blurring, airy sun serum that doubles as a pore-minimising skin veil. The 77% Heartleaf extract calms irritation while UV filters offer robust all-day broad-spectrum protection.',
+    keyIngredients: '77% Heartleaf Extract, Niacinamide, Adenosine, Birch Juice, Allantoin',
+    howToUse: 'Apply generously and evenly to face and neck before sun exposure. Reapply throughout the day as needed.'
+  },
+
+  // ── Extra Serums ──────────────────────────────────────────────
+  {
+    id: 'cosrx-propolis-serum',
+    name: 'COSRX Full Fit Propolis Light Ampoule',
+    brand: 'COSRX',
+    origin: 'South Korea 🇰🇷',
+    category: 'serums',
+    price: 1690,
+    volume: '30ml',
+    rating: 4.8,
+    reviews: 1870,
+    badge: 'Honey Skin Glow',
+    concerns: ['Calming', 'Nourishing', 'Brightening'],
+    bgTone: 'sand',
+    img: 'https://www.cosrx.com/cdn/shop/files/full-fit-propolis-light-ampoule-cosrx-official-1_2048x.jpg?v=1724835589',
+    tagline: '73.5% Black Bee Propolis Extract + Niacinamide + Honey Extract',
+    description: 'Harnesses the power of concentrated bee propolis to deeply nourish irritated skin, minimize inflammation, and deliver a golden honey glow. Ultralight non-sticky texture.',
+    keyIngredients: '73.5% Black Bee Propolis Extract, Honey Extract, Niacinamide, Panthenol, Beta-Glucan',
+    howToUse: 'After toning, apply 2–3 drops and gently press into skin until absorbed. Layer under your moisturizer.'
+  },
+  {
+    id: 'the-inkey-list-hyaluronic-acid',
+    name: 'The INKEY List Hyaluronic Acid Serum',
+    brand: 'The INKEY List',
+    origin: 'United Kingdom 🇬🇧',
+    category: 'serums',
+    price: 990,
+    volume: '30ml',
+    rating: 4.7,
+    reviews: 2310,
+    badge: 'Budget Hydration Hero',
+    concerns: ['Plumping', 'Deep Hydration', 'Dehydrated Skin'],
+    bgTone: 'olive',
+    img: 'https://www.theinkeylist.com/cdn/shop/files/INKEY_HyaluronicAcid_Serum_30ml_3.jpg?v=1752502327',
+    tagline: '2% Hyaluronic Acid + 0.1% Matrixyl 3000',
+    description: 'Budget-friendly powerhouse loved by Bangladeshi skincare beginners. Delivers intense hydration and visible plumping without fragrance or parabens.',
+    keyIngredients: '2% Hyaluronic Acid, 0.1% Matrixyl 3000, Aqua, Sodium PCA',
+    howToUse: 'After cleansing, apply 2–3 drops to face and neck and gently press in before layering richer products.'
+  },
+  {
+    id: 'numbuzin-no3-serum',
+    name: 'Numbuzin No.3 Skin Softening Serum',
+    brand: 'Numbuzin',
+    origin: 'South Korea 🇰🇷',
+    category: 'serums',
+    price: 1990,
+    volume: '50ml',
+    rating: 4.9,
+    reviews: 1420,
+    badge: 'Glass Skin Formula',
+    concerns: ['Skin Softening', 'Pore Blurring', 'Hydrating Glow'],
+    bgTone: 'rose',
+    img: 'https://numbuzin.com/cdn/shop/files/Numbuzin_No3_Skin_Softening_Serum_50ml_front.jpg?v=1739454095',
+    tagline: '50% Mugwort + 10% Niacinamide + Ceramide Softening Complex',
+    description: 'A silky, skin-blurring serum that fades uneven tone, plumps pores, and creates the coveted glass skin effect. One of the fastest rising serums in K-beauty loved across Bangladesh.',
+    keyIngredients: '50% Artemisia Annua (Mugwort) Extract, 10% Niacinamide, Ceramide NP, Beta-Glucan, Adenosine',
+    howToUse: 'Pump 1–2 times and smooth evenly across face morning and evening. Follow with moisturizer.'
+  },
+
+  // ── Extra Cleansers ───────────────────────────────────────────
+  {
+    id: 'beauty-of-joseon-green-plum-cleanser',
+    name: 'Beauty of Joseon Green Plum Refreshing Cleanser',
+    brand: 'Beauty of Joseon',
+    origin: 'South Korea 🇰🇷',
+    category: 'cleansers',
+    price: 1090,
+    volume: '100ml',
+    rating: 4.8,
+    reviews: 1350,
+    badge: 'Brightening Morning Wash',
+    concerns: ['Vitamin C Brightening', 'Gentle Exfoliation', 'Dull Skin'],
+    bgTone: 'olive',
+    img: 'https://beautyofjoseon.com/cdn/shop/files/green-plum-refreshing-cleanser-1-front.webp?v=1770276773',
+    tagline: '50% Green Plum Extract + AHA/PHA for Mild Daily Exfoliation',
+    description: 'A refreshing gel cleanser infused with 50% Korean green plum extract that gently exfoliates, brightens dull skin tone, and restores a natural pH balance for Bangladesh tropical mornings.',
+    keyIngredients: '50% Prunus Mume (Green Plum) Extract, AHA (Citric Acid), PHA (Lactobionic Acid), Betaine',
+    howToUse: 'Pump a small amount into wet hands and lather. Massage gently onto face and rinse thoroughly with lukewarm water.'
+  },
+  {
+    id: 'innisfree-jeju-volcanic-cleanser',
+    name: 'Innisfree Jeju Volcanic Pore Cleansing Foam',
+    brand: 'Innisfree',
+    origin: 'South Korea 🇰🇷',
+    category: 'cleansers',
+    price: 890,
+    volume: '150ml',
+    rating: 4.7,
+    reviews: 3100,
+    badge: 'Deep Pore Scrub Foam',
+    concerns: ['Deep Pore Cleanse', 'Sebum Control', 'Blackhead Care'],
+    bgTone: 'clay-tone',
+    img: 'https://cdn-image.oliveyoung.com/cfimages/cf-goods/uploads/images/thumbnails/10/00/13/8/100013897-2.jpg/q=80',
+    tagline: 'Jeju Volcanic Cluster Balls + Kaolin Clay Deep Pore Detox',
+    description: 'One of the most sold cleansers in Bangladeshi beauty shops. Micro volcanic ash clusters absorb excess sebum and sweep blackhead-causing impurities from deep within pores.',
+    keyIngredients: 'Jeju Volcanic Cluster Balls, Kaolin (White Clay), Hyaluronic Acid, Allantoin',
+    howToUse: 'Squeeze a small amount onto wet hands, lather into foam, and massage onto face for 30 seconds. Rinse well.'
+  },
+
+  // ── Extra Moisturizers ────────────────────────────────────────
+  {
+    id: 'torriden-dive-in-cream',
+    name: 'Torriden DIVE-IN Hyaluronic Acid Cream',
+    brand: 'Torriden',
+    origin: 'South Korea 🇰🇷',
+    category: 'moisturizers',
+    price: 1850,
+    volume: '80ml',
+    rating: 4.9,
+    reviews: 1140,
+    badge: 'Water Plump Barrier',
+    concerns: ['Intense Moisture', 'Plumping', 'Sensitive Barrier'],
+    bgTone: 'olive',
+    img: 'https://torriden.us/cdn/shop/files/DIVEINMoisturizer_web_1440x.jpg?v=1753346227',
+    tagline: '5-Type Hyaluronic Acid Gel-Cream for 72H Hydration',
+    description: 'Provides 72 hours of continuous intensive hydration with an outer barrier that locks in all the active moisture from your serum routine. Gel-cream texture ideal for humid Bangladesh climate.',
+    keyIngredients: '5D Hyaluronic Acid Complex, Ceramide NP, D-Panthenol, Madecassoside, Allantoin',
+    howToUse: 'After serum, smooth an appropriate amount over face and neck morning and evening as the locking moisturizer.'
+  },
+  {
+    id: 'beauty-of-joseon-ginseng-snail-cream',
+    name: 'Beauty of Joseon Revive Serum: Ginseng + Snail Mucin',
+    brand: 'Beauty of Joseon',
+    origin: 'South Korea 🇰🇷',
+    category: 'moisturizers',
+    price: 1350,
+    volume: '50ml',
+    rating: 4.9,
+    reviews: 1680,
+    badge: 'Hanbang Repair Essence',
+    concerns: ['Anti-Aging', 'Barrier Repair', 'Dewy Bounce'],
+    bgTone: 'sand',
+    img: 'https://beautyofjoseon.com/cdn/shop/files/revive-serum-ginseng-snail-mucin-1-front.webp?v=1770285798',
+    tagline: '30% Ginseng Root Water + 30% Snail Secretion Filtrate',
+    description: 'A Hanbang-inspired essence combining 30% Ginseng with 30% Snail Mucin for exceptional barrier repair, elasticity, and anti-aging benefits in one luxurious lightweight formula.',
+    keyIngredients: '30% Panax Ginseng Root Water, 30% Snail Secretion Filtrate, Niacinamide, Centella Asiatica',
+    howToUse: 'Apply after toner, gently pressing several drops into skin. Works beautifully under both light and rich moisturizers.'
+  },
+  {
+    id: 'purito-centella-unscented-cream',
+    name: 'Purito Centella Unscented Rich Cream',
+    brand: 'Purito',
+    origin: 'South Korea 🇰🇷',
+    category: 'moisturizers',
+    price: 1190,
+    volume: '60ml',
+    rating: 4.8,
+    reviews: 2050,
+    badge: 'Fragrance-Free Barrier Lock',
+    concerns: ['Eczema Care', 'Chemical-Free', 'Redness Calm'],
+    bgTone: 'peach',
+    img: 'https://purito.com/cdn/shop/files/purito-centella-unscented-rich-cream-60ml-1.jpg?v=1745813284',
+    tagline: 'Centella + 7 Ceramides, Zero Fragrance for Reactive Skin',
+    description: 'A deeply moisturizing fragrance-free cream ideal for reactive or eczema-prone skin. Fortified with 7 types of ceramide and Centella Asiatica to rebuild compromised barriers.',
+    keyIngredients: 'Centella Asiatica, Ceramide Complex (7 Types), Panthenol, Allantoin, Madecassoside',
+    howToUse: 'Apply a generous amount over face and neck as the last step of your evening routine or AM before SPF.'
+  },
+
+  // ── Extra Toners ──────────────────────────────────────────────
+  {
+    id: 'cosrx-propolis-toner',
+    name: 'COSRX Full Fit Propolis Synergy Toner',
+    brand: 'COSRX',
+    origin: 'South Korea 🇰🇷',
+    category: 'toners',
+    price: 1590,
+    volume: '150ml',
+    rating: 4.9,
+    reviews: 1560,
+    badge: 'Honey Skin Prep Toner',
+    concerns: ['Nourishing', 'Brightening', 'Glow Prep'],
+    bgTone: 'amber',
+    img: 'https://www.cosrx.com/cdn/shop/files/full-fit-propolis-synergy-toner-cosrx-official-1_2048x.jpg?v=1724835581',
+    tagline: '72.5% Black Bee Propolis + 10% Niacinamide Skin-Prep Toner',
+    description: 'A honey-golden toner that conditions, softens, and brightens skin in one sweep. The 72.5% black bee propolis feeds the skin essential amino acids for a plump, luminous, honeyed glow.',
+    keyIngredients: '72.5% Black Bee Propolis Extract, 10% Niacinamide, Honey Extract, Panthenol, Beta-Glucan',
+    howToUse: 'After cleansing, apply to a cotton pad and sweep across skin, or pour into palms and press gently into face and neck.'
+  },
+  {
+    id: 'klairs-supple-preparation-toner',
+    name: 'Klairs Supple Preparation Unscented Toner',
+    brand: 'Klairs',
+    origin: 'South Korea 🇰🇷',
+    category: 'toners',
+    price: 1850,
+    volume: '180ml',
+    rating: 4.9,
+    reviews: 2780,
+    badge: 'Gentle Barrier Prep',
+    concerns: ['Sensitive Skin', 'Hydration Prep', 'Pore Refining'],
+    bgTone: 'rose',
+    img: 'https://klairstory.com/cdn/shop/files/klairs-toner-supple-preparation-unscented-toner-front.jpg?v=1724839295',
+    tagline: 'Hyaluronic Acid + Beta-Glucan + pH-Balancing Formula',
+    description: 'A fragrance-free cult toner that soothes sensitive, reactive skin while perfectly preparing the moisture base for subsequent serums and creams. Essential for compromised skin barriers.',
+    keyIngredients: 'Beta-Glucan, Sodium Hyaluronate, Centella Asiatica, Allantoin, Panthenol, Betaine',
+    howToUse: 'After cleansing, gently press 2–3 applications into skin with palms using the 7-skin method for extra bounce.'
   }
 ];
 
@@ -629,18 +887,19 @@ export const CONFIG = {
 
 // State
 let cart = JSON.parse(localStorage.getItem('ayzan_cart') || '[]');
+let wishlist = JSON.parse(localStorage.getItem('ayzan_wishlist') || '[]');
 let currentCategory = 'all';
 let searchQuery = '';
 let deliveryZone = '70'; // 70 = Dhaka, 130 = Outside Dhaka
 let toastTimeout;
 
-// User Account & Database State (Pre-seeded with VIP Demo User)
+// User Account & Database State (Pre-seeded with VIP Demo User: Rain)
 let usersDb = JSON.parse(localStorage.getItem('ayzan_users_db') || '[]');
-if (usersDb.length === 0) {
+if (usersDb.length === 0 || usersDb.some(u => u.name === 'Nusrat Jahan' || u.id === 'user_nusrat')) {
   usersDb = [{
-    id: 'user_nusrat',
-    name: 'Nusrat Jahan',
-    email: 'nusrat@gmail.com',
+    id: 'user_rain',
+    name: 'Rain',
+    email: 'rain@ayzan.me',
     phone: '01712345678',
     zone: '70',
     address: 'House 42, Road 11, Banani, Dhaka-1213',
@@ -662,6 +921,12 @@ if (usersDb.length === 0) {
   localStorage.setItem('ayzan_users_db', JSON.stringify(usersDb));
 }
 let currentUser = JSON.parse(localStorage.getItem('ayzan_current_user') || 'null');
+if (currentUser && (currentUser.name === 'Nusrat Jahan' || currentUser.id === 'user_nusrat')) {
+  currentUser.name = 'Rain';
+  currentUser.email = 'rain@ayzan.me';
+  currentUser.id = 'user_rain';
+  localStorage.setItem('ayzan_current_user', JSON.stringify(currentUser));
+}
 let allOrders = JSON.parse(localStorage.getItem('ayzan_orders') || '[]');
 
 // DOM Selectors
@@ -672,6 +937,17 @@ const bagBtn = document.querySelector('#bag');
 const countEl = document.querySelector('#count');
 const drawerCountEl = document.querySelector('#drawerCount');
 const bottomBagCountEl = document.querySelector('#bottomBagCount');
+const wishlistBtn = document.querySelector('#wishlistBtn');
+const wishlistCountEl = document.querySelector('#wishlistCount');
+const mobileWishlistBtn = document.querySelector('#mobileWishlistBtn');
+const mobileWishlistCountEl = document.querySelector('#mobileWishlistCount');
+const wishlistDrawer = document.querySelector('#wishlistDrawer');
+const wishlistBackdrop = document.querySelector('#wishlistBackdrop');
+const closeWishlistDrawerBtn = document.querySelector('#closeWishlistDrawer');
+const wishlistItemsContainer = document.querySelector('#wishlistItems');
+const wishlistDrawerCountEl = document.querySelector('#wishlistDrawerCount');
+const wishlistDrawerFooter = document.querySelector('#wishlistDrawerFooter');
+const moveAllToBagBtn = document.querySelector('#moveAllToBagBtn');
 const toastEl = document.querySelector('#toast');
 const menuBtn = document.querySelector('#menu');
 const closeMenuBtn = document.querySelector('#closeMenu');
