@@ -55,7 +55,7 @@ export const PRODUCTS = [
     badge: 'Holy Grail Repair',
     concerns: ['Barrier Repair', 'Acne Scars', 'Hydration'],
     bgTone: 'peach',
-    img: 'https://kcbazar.com/wp-content/uploads/2023/10/Cosrx-Advanced-Snail-96-Mucin-Power-Essence-100-ml-1-1.jpg',
+    img: 'https://cdn.shopify.com/s/files/1/0513/3775/6828/files/2022-08-29_100735.png?v=1661735932',
     tagline: '96.3% Filtered Snail Secretion Filtrate',
     description: 'A cult-favorite essence that repairs damaged skin barriers, fades dark acne spots, and infuses intense moisture into dehydrated skin without clogging pores.',
     keyIngredients: '96.3% Snail Secretion Filtrate, Betaine, Sodium Hyaluronate, Allantoin, Panthenol',
@@ -74,7 +74,7 @@ export const PRODUCTS = [
     badge: 'Oil & Pore Control',
     concerns: ['Pores & Oil', 'Blemishes', 'Brightening'],
     bgTone: 'rose',
-    img: 'https://www.lookfantastic.com/images?url=https://static.thcdn.com/productimg/original/13187076-1075328241433880.jpg&format=webp&auto=avif&width=985&height=1313&fit=cover',
+    img: 'https://choicelegacy.com.bd/cdn/shop/files/rdn-niacinamide-10pct-zinc-1pct-30ml.png?v=1775551680',
     tagline: 'High-Strength Vitamin and Mineral Blemish Formula',
     description: 'Formulated to target sebum overproduction, visibly tighten enlarged pores, and smooth uneven skin texture caused by environmental stressors in Bangladesh.',
     keyIngredients: '10% Niacinamide (Vitamin B3), 1% Zinc PCA, Tamarindus Indica Seed Gum',
@@ -188,7 +188,7 @@ export const PRODUCTS = [
     badge: 'Viral Sensation',
     concerns: ['Redness Calm', 'Acne Soothing', 'pH Balance'],
     bgTone: 'olive',
-    img: 'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85',
+    img: 'https://cdn.shopify.com/s/files/1/0705/5140/4770/files/ANUA_Heartleaf_77_Soothing_Toner_250ml.webp?v=1776384422',
     tagline: '77% Houttuynia Cordata (Heartleaf) Extract from Korea',
     description: 'Korea’s award-winning #1 soothing toner. Calms irritation, balances oil-water levels, and reduces redness from sun exposure and active breakouts.',
     keyIngredients: '77% Heartleaf Extract, Centella Asiatica, Panthenol, Chamomile, Apple Fruit Extract',
@@ -245,7 +245,7 @@ export const PRODUCTS = [
     badge: '#1 Double Cleanser in BD',
     concerns: ['Blackheads', 'Melt Sunscreen', 'Pore Clarifying'],
     bgTone: 'olive',
-    img: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=85',
+    img: 'https://www.shopmissa.com/cdn/shop/files/Anua_Heartleaf-Cleansing-Oil-1_1000x.jpg?v=1750796982',
     tagline: 'Non-Comedogenic Heartleaf Oil for Dissolving Sebaceous Filaments',
     description: 'The viral #1 Korean double-cleansing oil in Bangladesh. Non-comedogenic and formulated with Heartleaf extract to gently dissolve waterproof SPF, stubborn makeup, and melt blackheads without clogging pores.',
     keyIngredients: 'Houttuynia Cordata (Heartleaf) Extract, Jojoba Seed Oil, Macadamia Ternifolia Seed Oil, Olive Fruit Oil, Grape Seed Oil',
@@ -264,7 +264,7 @@ export const PRODUCTS = [
     badge: 'Acne & Oil Control',
     concerns: ['Acne Breakouts', 'Deep Pore Cleanse', 'Excess Sebum'],
     bgTone: 'clay-tone',
-    img: 'https://img.drz.lazcdn.com/static/bd/p/355829b173de80900de6a63341b796be.jpg_720x720q80.jpg_.webp',
+    img: 'https://cdn.shopify.com/s/files/1/0912/8761/7901/files/SalicylicAcidDailyGentleCleanser150g.webp?v=1743972737',
     tagline: '0.5% Salicylic Acid + Botanical Purifying Complex',
     description: 'The highest-selling acne wash across Bangladesh. Formulated with Salicylic Acid (BHA) and Tea Tree Leaf Oil to penetrate pores, unclog trapped sebum, and prevent breakouts caused by tropical humidity.',
     keyIngredients: '0.5% Salicylic Acid (BHA), Melaleuca Alternifolia (Tea Tree) Leaf Oil, Willow Bark Water, Cryptomeria Japonica Leaf Extract',
@@ -283,7 +283,7 @@ export const PRODUCTS = [
     badge: 'Dermatologist Staple',
     concerns: ['Oil Barrier Balance', '3 Ceramides', 'Non-Stripping'],
     bgTone: 'sand',
-    img: 'https://media.ulta.com/i/ulta/2254420?w=800&h=800&fmt=auto',
+    img: 'https://darbeauty.com/cdn/shop/files/cerave-foaming-facial-cleanser_3606000534919_DarBeauty.jpg?v=1719072925',
     tagline: '3 Essential Ceramides + Niacinamide + Hyaluronic Acid',
     description: 'Developed with dermatologists, this gentle gel-to-foam wash cleanses and removes excess oil without disrupting your protective skin barrier. Non-comedogenic and fragrance-free for sensitive, oily, and acne-prone skin.',
     keyIngredients: 'Ceramides 1, 3, 6-II, Niacinamide (Vitamin B3), Hyaluronic Acid, Phytosphingosine, Cholesterol',
@@ -302,7 +302,7 @@ export const PRODUCTS = [
     badge: 'Olive Young #1 Winner',
     concerns: ['Dead Skin Cells', 'Mineral Hydration', 'Sensitive'],
     bgTone: 'olive',
-    img: 'https://media.ulta.com/i/ulta/2643237?w=800&h=800&fmt=auto',
+    img: 'https://roundlab.com/cdn/shop/files/Dokdo_Toner_2025.png?v=1772851199',
     tagline: 'Ulleungdo Deep Sea Water Mineral Balance + Hatching EX-07',
     description: 'Winning South Korea’s Olive Young beauty award for 4 consecutive years. Infused with 72 types of natural minerals from deep sea water to gently buff away dead skin cells and replenish moisture without tingling or irritation.',
     keyIngredients: 'Deep Sea Water, Hatching EX-07 (Enzymatic exfoliator), Panthenol, Allantoin, Betaine',
@@ -321,7 +321,7 @@ export const PRODUCTS = [
     badge: 'Miracle Acne Exfoliant',
     concerns: ['Blemish Clearing', 'Pore Tightening', 'Dead Skin Removal'],
     bgTone: 'peach',
-    img: 'https://bk.shajgoj.com/storage/2026/01/some-by-mi-aha-bha-pha-30-days-miracle-toner.jpg',
+    img: 'https://www.skincupid.co.uk/cdn/shop/files/SomeByMi-AHA_BHA_Toner_150ml.jpg?v=1760352045&width=800',
     tagline: '10,000 ppm Real Tea Tree Water + Triple Exfoliating Acids',
     description: 'A staple across Bangladesh for calming stubborn breakouts. Gently exfoliates dead skin cells, calms active pimples, and controls sebum with high-concentration Tea Tree and mild AHA, BHA, and PHA.',
     keyIngredients: '10,000 ppm Melaleuca Alternifolia (Tea Tree) Water, AHA (Citric Acid), BHA (Salicylic Acid), PHA (Lactobionic Acid), Niacinamide 2%',
@@ -340,7 +340,7 @@ export const PRODUCTS = [
     badge: 'Cult Glow Exfoliator',
     concerns: ['Rough Texture', 'Hyperpigmentation', 'Radiance'],
     bgTone: 'rose',
-    img: 'https://media.ulta.com/i/ulta/2551155?w=800&h=800&fmt=auto',
+    img: 'https://cdn.shopify.com/s/files/1/0506/2121/8972/files/fca9f70ea576b555d8afd22dc48cdaed_600x600.jpg?v=1695343342',
     tagline: 'Direct Alpha Hydroxy Acid (AHA) with Tasmanian Pepperberry',
     description: 'The worldwide multi-use sensation. Offers mild exfoliation for improved skin radiance, visible clarity, and uneven texture. Popular in Bangladesh for face, neck, elbows, and underarms.',
     keyIngredients: '7% Glycolic Acid, Tasmanian Pepperberry Derivative, Aloe Vera Leaf Water, Panax Ginseng Root Extract',
@@ -397,7 +397,7 @@ export const PRODUCTS = [
     badge: '5D Deep Moisture Glow',
     concerns: ['Dehydrated Skin', 'Plumping', 'Weightless Hydration'],
     bgTone: 'olive',
-    img: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=85',
+    img: 'https://yaoskin.com/cdn/shop/files/Torriden_DIVE-IN_Low_Molecule_Hyaluronic_Acid_Serum-standalone.jpg?v=1687016311&width=900',
     tagline: '5D-Complex Hyaluronic Acid + D-Panthenol + Malachite Extract',
     description: 'Ranked #1 hydrating serum at Olive Young. Features 5 molecular weights of Hyaluronic Acid that penetrate every layer of skin for 48-hour inner hydration with a refreshing, non-sticky water gel finish.',
     keyIngredients: '5D Multi-Hyaluronic Acid Complex, D-Panthenol, Allantoin, Madecassoside, Malachite Extract',
@@ -454,7 +454,7 @@ export const PRODUCTS = [
     badge: '24-Hour Barrier Lock',
     concerns: ['Damaged Barrier', 'Oil-Free Lotion', 'Ceramide Shield'],
     bgTone: 'sand',
-    img: 'https://media.ulta.com/i/ulta/2254422?w=800&h=800&fmt=auto',
+    img: 'https://cdn.shopify.com/s/files/1/0981/3495/0177/files/cerave_daily_moisturizing_lotion_12oz_front-700x875-v2.webp?v=1776367870',
     tagline: 'MVE Controlled-Release Delivery + 3 Bio-Identical Ceramides',
     description: 'An oil-free, lightweight moisturizer that hydrates skin for 24 continuous hours while helping restore the natural skin barrier. Non-greasy, fast-absorbing texture formulated for normal to dry or sensitive skin.',
     keyIngredients: 'Ceramides 1, 3, 6-II, Hyaluronic Acid, Glycerin, Cholesterol, Phytosphingosine',
@@ -473,7 +473,7 @@ export const PRODUCTS = [
     badge: 'Viral Peach Glass Skin',
     concerns: ['Glass Skin', 'Dark Spots', 'Rough Texture'],
     bgTone: 'peach',
-    img: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=85',
+    img: 'https://anua.com/cdn/shop/files/anua-global-ampoule-serum-peach-70-niacinamide-serum-1239193727_2000x.jpg?v=1779177611',
     tagline: '70% Jeju Upcycled Peach Extract + 5% Niacinamide + Vitamin B12',
     description: 'The viral K-beauty sensation sweeping Bangladesh. Formulated with 70% fermented peach extract and 5% niacinamide to smooth rough skin texture, fade hyperpigmentation, and impart an ethereal peach glass glow.',
     keyIngredients: '70% Prunus Persica (Peach) Fruit Extract, 5% Niacinamide, Cyanocobalamin (Vitamin B12), Triple Hyaluronic Acid, Desert Yeast Oil',
@@ -492,7 +492,7 @@ export const PRODUCTS = [
     badge: 'Viral Pink Barrier Rescue',
     concerns: ['Barrier Damage', 'Immediate Calm', 'Redness Recovery'],
     bgTone: 'rose',
-    img: 'https://cdn-image.oliveyoung.com/prdtImg/1388/c8f97760-fc0b-4834-8638-e7218167f1af.jpg?RS=1000x1000&AR=0&SF=webp&QT=80',
+    img: 'https://cdn.shopify.com/s/files/1/1588/9573/files/The-Ordinary-Soothing-and-Barrier-Support-Serum-30ml_1.png?v=1762264716',
     tagline: 'Multi-Active Pink Emulsion with Vitamin B12 & Centella Asiatica Phytotechnologies',
     description: 'A multi-action solution aimed at reducing visible skin redness and repairing damaged skin barriers within 2 hours. Beloved across Bangladesh for soothing sensitized skin caused by aggressive treatments or environmental heat.',
     keyIngredients: 'Vitamin B12 (gives signature pink hue), Centella Asiatica Phytotechnologies, Bisabolol, Gallic Acid Derivatives, Niacinamide 2%',
@@ -549,7 +549,7 @@ export const PRODUCTS = [
     badge: 'Velvet Airy Chemical Shield',
     concerns: ['Velvet Matte', 'Zero White Cast', 'Antioxidant Defense'],
     bgTone: 'sand',
-    img: 'https://d2c3d01lcpw2ui.cloudfront.net/gl/data/item/1682658931/HRSM04SCM178538697921060dbf788d504.jpg',
+    img: 'https://pureseoul.co.uk/cdn/shop/files/HARUHARU-Wonder-Black-Rice-Moisture-Airyfit-Daily-Sunscreen-SPF50-50ml-PURESEOUL-UK-KBeauty-Shop.png?v=1727278999',
     tagline: 'Fermented Black Rice Extract + Ceramide NP + Heartleaf',
     description: 'A cult-favorite chemical sunscreen with a velvet matte finish that feels like a weightless moisturizer. Provides maximum broad-spectrum SPF 50+ PA++++ with zero white cast, zero sting, and zero greasiness.',
     keyIngredients: 'Fermented Oryza Sativa (Black Rice) Extract, Ceramide NP, Houttuynia Cordata Extract, Adenosine, Niacinamide',
@@ -587,7 +587,7 @@ export const PRODUCTS = [
     badge: 'Global #1 Micellar Water',
     concerns: ['Waterproof Makeup', 'Pollution Cleanse', 'Sensitive Skin'],
     bgTone: 'rose',
-    img: 'https://back-ac-prod.bioderma.com/media/catalog/product/cache/b443460c314aa18d2c50e93a48ddeb50/3/0/30c5d09da935f00100bc4f1c55858200203cb418ee331a179f6ff0116baa406a-_7b151402_7d__7b_7d__7b28709a_7d.jpg',
+    img: 'https://ageless.shop/cdn/shop/files/Bioderma-H2O-1.jpg?v=1705321881&width=1946',
     tagline: 'Dermatological Micellar Water Cleanser & Makeup Remover for Sensitive Skin',
     description: 'The world’s most iconic micellar water, prescribed by dermatologists worldwide. Cleanses 99% of makeup, microscopic pollution particles, and city grime while respecting the skin’s biological balance.',
     keyIngredients: 'Biomimetic Fatty Acid Esters (Micelles), Cucumis Sativus (Cucumber) Extract, Mannitol, Xylitol, Rhamnose',
@@ -606,7 +606,7 @@ export const PRODUCTS = [
     badge: 'Max Strength Acne Wash',
     concerns: ['Cystic Acne', 'Chest & Back Acne', 'Bacteria Purge'],
     bgTone: 'peach',
-    img: 'https://panoxyl.com/wp-content/uploads/2022/05/Foaming-Wash0.webp',
+    img: 'https://cdn.shopify.com/s/files/1/0086/7821/1642/products/PanOxyl10_5.5oz.jpg?v=1625788686',
     tagline: '10% Benzoyl Peroxide Antimicrobial Wash for Face, Chest & Back',
     description: 'The strongest OTC acne wash recommended by dermatologists across Bangladesh. Kills acne-causing bacteria on contact, unclogs congested pores, and prevents new breakouts on both face and body.',
     keyIngredients: '10% Benzoyl Peroxide (Active), Glycerin, Carbomer, Sodium Cocoyl Isethionate',
@@ -628,7 +628,7 @@ export const PRODUCTS = [
     badge: 'Cooling Stick SPF',
     concerns: ['Midday Reapply', 'Soothing Shield', 'Glow Finish'],
     bgTone: 'amber',
-    img: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=85',
+    img: 'https://www.skin1004.com/cdn/shop/files/skin1004-sun-hyalu-cica-silky-fit-sun-stick-40032143180022.png?v=1709706355',
     tagline: '100% Madagascar Centella + SPF 50+ Cooling Sun Stick',
     description: 'A travel-friendly centella sun stick that soothes and protects in one swipe. Melts effortlessly into skin for a dewy finish ideal for Bangladesh\'\'s harsh midday UV index.',
     keyIngredients: 'Centella Asiatica Extract, Niacinamide, Panthenol, Sodium Hyaluronate',
@@ -647,7 +647,7 @@ export const PRODUCTS = [
     badge: 'Water-Bomb SPF',
     concerns: ['Ultra-Lightweight', 'Glass Glow SPF', 'Oily Skin'],
     bgTone: 'olive',
-    img: 'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=800&q=85',
+    img: 'https://www.skincupid.co.uk/cdn/shop/files/ISNTREE_Hyaluronic_Acid_Watery_Sun_Gel_SPF50_PA_50ml.jpg?v=1774433528&width=800',
     tagline: '5-Type Hyaluronic Acid Complex + Aqua Shield UV Gel',
     description: 'A water-bomb sunscreen gel that feels like pure moisture while offering maximum SPF 50+ PA++++ defense. Non-sticky satin finish perfect for oily skin in Bangladesh humidity.',
     keyIngredients: '5-Type Hyaluronic Acid Complex, Niacinamide, Centella Asiatica, Aloe Vera Leaf Extract',
@@ -666,7 +666,7 @@ export const PRODUCTS = [
     badge: 'Blurring Skin Veil',
     concerns: ['Pore Blur', 'Sensitive Shield', 'Zero Stickiness'],
     bgTone: 'peach',
-    img: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=85',
+    img: 'https://anua.com/cdn/shop/files/anua-us-sunscreen-zero-cast-moisturizing-finish-sunscreen-1244398149.jpg?v=1781507109&width=2000',
     tagline: '77% Heartleaf Extract + Pore-Blurring Airy Sun Veil',
     description: 'A blurring, airy sun serum that doubles as a pore-minimising skin veil. The 77% Heartleaf extract calms irritation while UV filters offer robust all-day broad-spectrum protection.',
     keyIngredients: '77% Heartleaf Extract, Niacinamide, Adenosine, Birch Juice, Allantoin',
@@ -706,7 +706,7 @@ export const PRODUCTS = [
     badge: 'Budget Hydration Hero',
     concerns: ['Plumping', 'Deep Hydration', 'Dehydrated Skin'],
     bgTone: 'olive',
-    img: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=800&q=85',
+    img: 'https://www.myskin-plug.com/cdn/shop/products/inkxxx_theinkeylist_hyaluronic_1560x1960-noieb.jpg?v=1600697466&width=598',
     tagline: '2% Hyaluronic Acid + 0.1% Matrixyl 3000',
     description: 'Budget-friendly powerhouse loved by Bangladeshi skincare beginners. Delivers intense hydration and visible plumping without fragrance or parabens.',
     keyIngredients: '2% Hyaluronic Acid, 0.1% Matrixyl 3000, Aqua, Sodium PCA',
@@ -725,7 +725,7 @@ export const PRODUCTS = [
     badge: 'Glass Skin Formula',
     concerns: ['Skin Softening', 'Pore Blurring', 'Hydrating Glow'],
     bgTone: 'rose',
-    img: 'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=85',
+    img: 'https://www.skincupid.co.uk/cdn/shop/files/NUMBUZIN_No.3_Skin_Softening_Serum_50ml.jpg?v=1760352122&width=800',
     tagline: '50% Mugwort + 10% Niacinamide + Ceramide Softening Complex',
     description: 'A silky, skin-blurring serum that fades uneven tone, plumps pores, and creates the coveted glass skin effect. One of the fastest rising serums in K-beauty loved across Bangladesh.',
     keyIngredients: '50% Artemisia Annua (Mugwort) Extract, 10% Niacinamide, Ceramide NP, Beta-Glucan, Adenosine',
@@ -765,7 +765,7 @@ export const PRODUCTS = [
     badge: 'Deep Pore Scrub Foam',
     concerns: ['Deep Pore Cleanse', 'Sebum Control', 'Blackhead Care'],
     bgTone: 'clay-tone',
-    img: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85',
+    img: 'https://cdn.shopify.com/s/files/1/0887/2729/0120/files/Product-page-sizes-11-1_1c082adc-9f3e-4044-a7d6-68761278a0e2.jpg?v=1758454213',
     tagline: 'Jeju Volcanic Cluster Balls + Kaolin Clay Deep Pore Detox',
     description: 'One of the most sold cleansers in Bangladeshi beauty shops. Micro volcanic ash clusters absorb excess sebum and sweep blackhead-causing impurities from deep within pores.',
     keyIngredients: 'Jeju Volcanic Cluster Balls, Kaolin (White Clay), Hyaluronic Acid, Allantoin',
@@ -786,7 +786,7 @@ export const PRODUCTS = [
     badge: 'Water Plump Barrier',
     concerns: ['Intense Moisture', 'Plumping', 'Sensitive Barrier'],
     bgTone: 'olive',
-    img: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=85',
+    img: 'https://skinorea.com/cdn/shop/files/Torriden-Dive-In-Hyaluronic-Acid-Soothing-Cream-100ml_1.jpg',
     tagline: '5-Type Hyaluronic Acid Gel-Cream for 72H Hydration',
     description: 'Provides 72 hours of continuous intensive hydration with an outer barrier that locks in all the active moisture from your serum routine. Gel-cream texture ideal for humid Bangladesh climate.',
     keyIngredients: '5D Hyaluronic Acid Complex, Ceramide NP, D-Panthenol, Madecassoside, Allantoin',
@@ -805,7 +805,7 @@ export const PRODUCTS = [
     badge: 'Hanbang Repair Essence',
     concerns: ['Anti-Aging', 'Barrier Repair', 'Dewy Bounce'],
     bgTone: 'sand',
-    img: 'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=85',
+    img: 'https://www.skincupid.co.uk/cdn/shop/files/BEAUTYOFJOSEONReviveSerum_30ml.jpg?v=1760352050&width=800',
     tagline: '30% Ginseng Root Water + 30% Snail Secretion Filtrate',
     description: 'A Hanbang-inspired essence combining 30% Ginseng with 30% Snail Mucin for exceptional barrier repair, elasticity, and anti-aging benefits in one luxurious lightweight formula.',
     keyIngredients: '30% Panax Ginseng Root Water, 30% Snail Secretion Filtrate, Niacinamide, Centella Asiatica',
@@ -824,7 +824,7 @@ export const PRODUCTS = [
     badge: 'Fragrance-Free Barrier Lock',
     concerns: ['Eczema Care', 'Chemical-Free', 'Redness Calm'],
     bgTone: 'peach',
-    img: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=85',
+    img: 'https://cdn.shopify.com/s/files/1/0824/4015/9562/files/d1d10518-2326-4797-936d-07e368f824a7.png?v=1728131769',
     tagline: 'Centella + 7 Ceramides, Zero Fragrance for Reactive Skin',
     description: 'A deeply moisturizing fragrance-free cream ideal for reactive or eczema-prone skin. Fortified with 7 types of ceramide and Centella Asiatica to rebuild compromised barriers.',
     keyIngredients: 'Centella Asiatica, Ceramide Complex (7 Types), Panthenol, Allantoin, Madecassoside',
@@ -864,7 +864,7 @@ export const PRODUCTS = [
     badge: 'Gentle Barrier Prep',
     concerns: ['Sensitive Skin', 'Hydration Prep', 'Pore Refining'],
     bgTone: 'rose',
-    img: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=85',
+    img: 'https://www.skincupid.co.uk/cdn/shop/files/Dear_Klairs_Supple_Preparation_Unscented_Toner_180_mL.jpg?v=1773319866&width=800',
     tagline: 'Hyaluronic Acid + Beta-Glucan + pH-Balancing Formula',
     description: 'A fragrance-free cult toner that soothes sensitive, reactive skin while perfectly preparing the moisture base for subsequent serums and creams. Essential for compromised skin barriers.',
     keyIngredients: 'Beta-Glucan, Sodium Hyaluronate, Centella Asiatica, Allantoin, Panthenol, Betaine',
@@ -1181,7 +1181,7 @@ export function renderProducts() {
     <article class="product" data-id="${p.id}">
       <div class="product-image ${p.bgTone}">
         <span class="badge">${p.badge}</span>
-        <img src="${p.img}" alt="${p.name}" loading="lazy" />
+        <img src="${p.img}" alt="${p.name}" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85';" />
         <button class="quick-view-btn" data-id="${p.id}" aria-label="Quick view ${p.name}">
           Quick View 👁
         </button>
@@ -1265,7 +1265,7 @@ export function openQuickView(productId) {
     <div class="quickview-grid">
       <div class="quickview-media ${p.bgTone}">
         <span class="badge">${p.badge}</span>
-        <img src="${p.img}" alt="${p.name}" />
+        <img src="${p.img}" alt="${p.name}" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85';" />
       </div>
       <div class="quickview-details">
         <div class="quickview-header">
@@ -1376,7 +1376,7 @@ export function renderCart() {
   cart.forEach(item => {
     itemsHtml += `
       <div class="cart-item" data-id="${item.id}">
-        <img class="cart-item-img" src="${item.img}" alt="${item.name}">
+        <img class="cart-item-img" src="${item.img}" alt="${item.name}" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85';">
         <div class="cart-item-info">
           <h4>${item.name}</h4>
           <p class="item-unit-price">৳ ${item.price.toLocaleString('en-IN')} ${item.volume ? `(${item.volume})` : ''}</p>
@@ -1933,7 +1933,7 @@ function handleUserAdvisorMessage(userText) {
             <strong style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--clay);">Recommended Formulations:</strong>
             ${matchedProducts.map(p => `
               <div class="advisor-product-card">
-                <img src="${p.img}" alt="${p.name}" class="advisor-product-thumb" />
+                <img src="${p.img}" alt="${p.name}" class="advisor-product-thumb" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85';" />
                 <div class="advisor-product-info">
                   <h5>${p.name}</h5>
                   <span>৳ ${p.price.toLocaleString('en-IN')}</span>
