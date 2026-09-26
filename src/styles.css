@@ -4572,3 +4572,159 @@ footer {
   font-weight: 600;
   white-space: nowrap;
 }
+
+/* ==========================================================
+   VIDEO SHOWCASE SECTION — Premium cinematic split
+   ========================================================== */
+.video-showcase-section {
+  background: #0e0b09;
+  padding: 100px 6vw 96px;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-showcase-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 60% at 10% 50%, rgba(198, 124, 90, 0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 50% at 90% 50%, rgba(198, 124, 90, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.video-showcase-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.video-showcase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 52px;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.video-showcase-header .micro {
+  color: rgba(198, 124, 90, 0.8);
+  letter-spacing: 0.12em;
+}
+
+.video-showcase-header h2 {
+  font: italic 700 44px/1.1 var(--serif);
+  color: #f8f0ea;
+  margin: 10px 0 0;
+  white-space: nowrap;
+}
+
+.video-showcase-header h2 em {
+  color: var(--clay);
+}
+
+.video-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.video-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #1a1310;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.04);
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(198, 124, 90, 0.15);
+}
+
+.video-wrap {
+  position: relative;
+  aspect-ratio: 9 / 14;
+  overflow: hidden;
+}
+
+.video-wrap video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.9) saturate(1.08);
+}
+
+.video-overlay-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: rgba(14, 11, 9, 0.62);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f8f0ea;
+  font: 700 10px/1 var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 40px;
+}
+
+/* Gradient vignette over bottom of video */
+.video-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(14, 11, 9, 0.8) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.video-card-caption {
+  padding: 20px 22px 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.video-tag {
+  display: inline-block;
+  font: 600 10px/1 var(--mono);
+  letter-spacing: 0.1em;
+  color: var(--clay);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.video-card-caption p {
+  font-size: 13.5px;
+  color: rgba(248, 240, 234, 0.7);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Mobile: stack video cards */
+@media (max-width: 700px) {
+  .video-showcase-section {
+    padding: 60px 18px 56px;
+  }
+
+  .video-showcase-header h2 {
+    font-size: 30px !important;
+    white-space: normal;
+  }
+
+  .video-duo {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .video-wrap {
+    aspect-ratio: 4 / 5;
+  }
+}

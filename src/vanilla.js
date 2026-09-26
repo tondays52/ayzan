@@ -1,4 +1,4 @@
-﻿// ==========================================================================
+// ==========================================================================
 // AYZAN SKINCARE (ayzan.me) - E-Commerce Engine & Bangladesh Payment System
 // ==========================================================================
 
@@ -647,7 +647,7 @@ export const PRODUCTS = [
     badge: 'Water-Bomb SPF',
     concerns: ['Ultra-Lightweight', 'Glass Glow SPF', 'Oily Skin'],
     bgTone: 'olive',
-    img: 'https://isntree.com/cdn/shop/files/hyaluronic-acid-sun-gel-spf50-pa-isntree-official-website-1_1024x.jpg',
+    img: 'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=800&q=85',
     tagline: '5-Type Hyaluronic Acid Complex + Aqua Shield UV Gel',
     description: 'A water-bomb sunscreen gel that feels like pure moisture while offering maximum SPF 50+ PA++++ defense. Non-sticky satin finish perfect for oily skin in Bangladesh humidity.',
     keyIngredients: '5-Type Hyaluronic Acid Complex, Niacinamide, Centella Asiatica, Aloe Vera Leaf Extract',
@@ -666,7 +666,7 @@ export const PRODUCTS = [
     badge: 'Blurring Skin Veil',
     concerns: ['Pore Blur', 'Sensitive Shield', 'Zero Stickiness'],
     bgTone: 'peach',
-    img: 'https://anua.com/cdn/shop/files/anua-us-sun-heartleaf-airy-fit-sun-serum-1273403099_2000x.jpg?v=1781614965',
+    img: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=85',
     tagline: '77% Heartleaf Extract + Pore-Blurring Airy Sun Veil',
     description: 'A blurring, airy sun serum that doubles as a pore-minimising skin veil. The 77% Heartleaf extract calms irritation while UV filters offer robust all-day broad-spectrum protection.',
     keyIngredients: '77% Heartleaf Extract, Niacinamide, Adenosine, Birch Juice, Allantoin',
@@ -786,7 +786,7 @@ export const PRODUCTS = [
     badge: 'Water Plump Barrier',
     concerns: ['Intense Moisture', 'Plumping', 'Sensitive Barrier'],
     bgTone: 'olive',
-    img: 'https://torriden.us/cdn/shop/files/DIVEINMoisturizer_web_1440x.jpg?v=1753346227',
+    img: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=85',
     tagline: '5-Type Hyaluronic Acid Gel-Cream for 72H Hydration',
     description: 'Provides 72 hours of continuous intensive hydration with an outer barrier that locks in all the active moisture from your serum routine. Gel-cream texture ideal for humid Bangladesh climate.',
     keyIngredients: '5D Hyaluronic Acid Complex, Ceramide NP, D-Panthenol, Madecassoside, Allantoin',
@@ -805,7 +805,7 @@ export const PRODUCTS = [
     badge: 'Hanbang Repair Essence',
     concerns: ['Anti-Aging', 'Barrier Repair', 'Dewy Bounce'],
     bgTone: 'sand',
-    img: 'https://beautyofjoseon.com/cdn/shop/files/revive-serum-ginseng-snail-mucin-1-front.webp?v=1770285798',
+    img: 'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=800&q=85',
     tagline: '30% Ginseng Root Water + 30% Snail Secretion Filtrate',
     description: 'A Hanbang-inspired essence combining 30% Ginseng with 30% Snail Mucin for exceptional barrier repair, elasticity, and anti-aging benefits in one luxurious lightweight formula.',
     keyIngredients: '30% Panax Ginseng Root Water, 30% Snail Secretion Filtrate, Niacinamide, Centella Asiatica',
@@ -864,7 +864,7 @@ export const PRODUCTS = [
     badge: 'Gentle Barrier Prep',
     concerns: ['Sensitive Skin', 'Hydration Prep', 'Pore Refining'],
     bgTone: 'rose',
-    img: 'https://klairstory.com/cdn/shop/files/klairs-toner-supple-preparation-unscented-toner-front.jpg?v=1724839295',
+    img: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=85',
     tagline: 'Hyaluronic Acid + Beta-Glucan + pH-Balancing Formula',
     description: 'A fragrance-free cult toner that soothes sensitive, reactive skin while perfectly preparing the moisture base for subsequent serums and creams. Essential for compromised skin barriers.',
     keyIngredients: 'Beta-Glucan, Sodium Hyaluronate, Centella Asiatica, Allantoin, Panthenol, Betaine',
@@ -877,9 +877,9 @@ export const CONFIG = {
   storeName: 'AYZAN Skincare',
   storeDomain: 'ayzan.me',
   officialEmail: 'her.skincare@ayzan.me',
-  bKashNumber: '01712-345678', // bKash Personal/Merchant Number
-  nagadNumber: '01712-345678', // Nagad Personal Number
-  rocketNumber: '01712-345678-0', // Rocket Number
+  bKashNumber: '01831428847', // bKash Personal/Merchant Number
+  nagadNumber: '01831428847', // Nagad Personal Number
+  rocketNumber: '01831428847', // Rocket Number
   freeDeliveryThreshold: 2500, // BDT 2,500
   dhakaDeliveryFee: 70,
   outsideDhakaDeliveryFee: 130
@@ -900,7 +900,7 @@ if (usersDb.length === 0 || usersDb.some(u => u.name === 'Nusrat Jahan' || u.id 
     id: 'user_rain',
     name: 'Rain',
     email: 'rain@ayzan.me',
-    phone: '01712345678',
+    phone: '01831428847',
     zone: '70',
     address: 'House 42, Road 11, Banani, Dhaka-1213',
     skinType: 'combination',
@@ -1848,9 +1848,9 @@ function getAdvisorBotResponse(rawQuery) {
       message: `
         <p><strong>💳 Payment Policy at AYZAN Skincare:</strong></p>
         <p>To ensure 100% genuine order authenticity and immediate warehouse dispatch, we accept <strong>100% advance payment via MFS</strong>:</p>
-        <p>• 🌸 <strong>bKash Personal:</strong> 01712-345678<br>
-        • 🟠 <strong>Nagad Personal:</strong> 01712-345678<br>
-        • 🟣 <strong>Rocket:</strong> 01712-345678-0</p>
+        <p>• 🌸 <strong>bKash Personal:</strong> 01831428847<br>
+        • 🟠 <strong>Nagad Personal:</strong> 01831428847<br>
+        • 🟣 <strong>Rocket:</strong> 01831428847</p>
         <p><em>Please note: We do not accept Cash on Delivery (COD).</em> Simply complete 'Send Money' and enter your Transaction ID (TrxID) in the checkout drawer to place your order!</p>
       `,
       showContact: false,
