@@ -893,7 +893,7 @@ let searchQuery = '';
 let deliveryZone = '70'; // 70 = Dhaka, 130 = Outside Dhaka
 let toastTimeout;
 
-// User Account & Database State (Pre-seeded with VIP Demo User: Rain)
+// User Account & Database State (VIP User Account Rain initialized with 0 orders)
 let usersDb = JSON.parse(localStorage.getItem('ayzan_users_db') || '[]');
 if (usersDb.length === 0 || usersDb.some(u => u.name === 'Nusrat Jahan' || u.id === 'user_nusrat')) {
   usersDb = [{
@@ -905,29 +905,7 @@ if (usersDb.length === 0 || usersDb.some(u => u.name === 'Nusrat Jahan' || u.id 
     address: 'House 42, Road 11, Banani, Dhaka-1213',
     skinType: 'combination',
     password: 'password123',
-    orders: [
-      {
-        id: 'AYZ-884912',
-        date: '24 Sep 2026, 14:30',
-        timestamp: Date.now() - 86400000 * 2,
-        customerName: 'Rain',
-        customerPhone: '01831428847',
-        customerAddress: 'House 42, Road 11, Banani, Dhaka-1213',
-        customerNotes: 'Please call before delivery.',
-        zone: 'Inside Dhaka',
-        deliveryCharge: 0,
-        subtotal: 2800,
-        total: 2800,
-        payMethod: 'bKash',
-        trxId: 'BL92K81XZ',
-        status: 'In Transit',
-        items: [
-          { id: 'boj-relief-sun', name: 'Beauty of Joseon Relief Sun: Rice + Probiotics SPF 50+', price: 1350, qty: 1, volume: '50ml', img: 'https://beautyofjoseon.com/cdn/shop/files/05_0805__-_ROW_654a8e4e-1d53-4dca-a3a0-c0c2f55e3ca0.jpg?v=1787196328' },
-          { id: 'cosrx-snail-96-essence', name: 'COSRX Advanced Snail 96 Mucin Power Essence', price: 1450, qty: 1, volume: '100ml', img: 'https://cdn.shopify.com/s/files/1/0513/3775/6828/files/2022-08-29_100735.png?v=1661735932' }
-        ],
-        itemsSummary: ['Beauty of Joseon Relief Sun (50ml) × 1', 'COSRX Snail 96 Mucin (100ml) × 1']
-      }
-    ]
+    orders: []
   }];
   localStorage.setItem('ayzan_users_db', JSON.stringify(usersDb));
 }
@@ -936,13 +914,11 @@ if (currentUser && (currentUser.name === 'Nusrat Jahan' || currentUser.id === 'u
   currentUser.name = 'Rain';
   currentUser.email = 'rain@ayzan.me';
   currentUser.id = 'user_rain';
+  if (!currentUser.orders) currentUser.orders = [];
   localStorage.setItem('ayzan_current_user', JSON.stringify(currentUser));
 }
 let allOrders = JSON.parse(localStorage.getItem('ayzan_orders') || '[]');
-if (allOrders.length === 0 && usersDb[0]?.orders?.length > 0) {
-  allOrders = [...usersDb[0].orders];
-  localStorage.setItem('ayzan_orders', JSON.stringify(allOrders));
-}
+
 
 // DOM Selectors
 const productListEl = document.querySelector('#productList');
