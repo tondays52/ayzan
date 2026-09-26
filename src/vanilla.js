@@ -908,13 +908,24 @@ if (usersDb.length === 0 || usersDb.some(u => u.name === 'Nusrat Jahan' || u.id 
     orders: [
       {
         id: 'AYZ-884912',
-        date: '24 Sep 2026',
-        items: ['Beauty of Joseon Relief Sun (50ml) × 1', 'COSRX Snail 96 Mucin (100ml) × 1'],
+        date: '24 Sep 2026, 14:30',
+        timestamp: Date.now() - 86400000 * 2,
+        customerName: 'Rain',
+        customerPhone: '01831428847',
+        customerAddress: 'House 42, Road 11, Banani, Dhaka-1213',
+        customerNotes: 'Please call before delivery.',
+        zone: 'Inside Dhaka',
+        deliveryCharge: 0,
+        subtotal: 2800,
         total: 2800,
         payMethod: 'bKash',
         trxId: 'BL92K81XZ',
-        zone: 'Inside Dhaka',
-        status: 'Dispatched via Pathao Express 🚚'
+        status: 'In Transit',
+        items: [
+          { id: 'boj-relief-sun', name: 'Beauty of Joseon Relief Sun: Rice + Probiotics SPF 50+', price: 1350, qty: 1, volume: '50ml', img: 'https://beautyofjoseon.com/cdn/shop/files/05_0805__-_ROW_654a8e4e-1d53-4dca-a3a0-c0c2f55e3ca0.jpg?v=1787196328' },
+          { id: 'cosrx-snail-96-essence', name: 'COSRX Advanced Snail 96 Mucin Power Essence', price: 1450, qty: 1, volume: '100ml', img: 'https://cdn.shopify.com/s/files/1/0513/3775/6828/files/2022-08-29_100735.png?v=1661735932' }
+        ],
+        itemsSummary: ['Beauty of Joseon Relief Sun (50ml) × 1', 'COSRX Snail 96 Mucin (100ml) × 1']
       }
     ]
   }];
@@ -928,6 +939,10 @@ if (currentUser && (currentUser.name === 'Nusrat Jahan' || currentUser.id === 'u
   localStorage.setItem('ayzan_current_user', JSON.stringify(currentUser));
 }
 let allOrders = JSON.parse(localStorage.getItem('ayzan_orders') || '[]');
+if (allOrders.length === 0 && usersDb[0]?.orders?.length > 0) {
+  allOrders = [...usersDb[0].orders];
+  localStorage.setItem('ayzan_orders', JSON.stringify(allOrders));
+}
 
 // DOM Selectors
 const productListEl = document.querySelector('#productList');
@@ -1568,16 +1583,31 @@ if (orderForm) {
       mailOrderBtn.href = `mailto:${CONFIG.officialEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(orderEmailBody)}`;
     }
 
-    // Save Order into User Account & History
+    // Save Order into User Account & History (Enriched for Admin Dashboard)
     const newOrderRecord = {
       id: orderId,
-      date: new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }),
-      items: cart.map(i => `${i.name} (${i.volume || 'std'}) × ${i.qty}`),
+      date: new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' }),
+      timestamp: Date.now(),
+      customerName: name,
+      customerPhone: phone,
+      customerAddress: address,
+      customerNotes: instructions,
+      zone: zoneName,
+      deliveryCharge: isFreeDelivery ? 0 : effectiveDelivery,
+      subtotal: subtotal,
       total: grandTotal,
       payMethod: payMethod,
       trxId: trxId,
-      zone: zoneName,
-      status: 'Confirmed • Packing in Dhaka Hub 🌸'
+      status: 'Pending Verification',
+      items: cart.map(i => ({
+        id: i.id,
+        name: i.name,
+        volume: i.volume || 'std',
+        price: i.price,
+        qty: i.qty,
+        img: i.img
+      })),
+      itemsSummary: cart.map(i => `${i.name} (${i.volume || 'std'}) × ${i.qty}`)
     };
 
     allOrders.unshift(newOrderRecord);
