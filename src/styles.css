@@ -1278,17 +1278,47 @@ footer {
 .mfs-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 24px;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .mfs-pills span {
-  font: 500 11.5px var(--mono);
-  padding: 5px 12px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  color: #f7ebe4;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 700 9px/1.3 var(--sans);
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+  padding: 6px;
+}
+
+.mfs-pills span:hover {
+  transform: translateY(-3px) scale(1.09);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
+}
+
+/* bKash */
+.mfs-pills span:nth-child(1) {
+  background: radial-gradient(circle at 38% 38%, #ff5fa3 0%, #e2136e 60%, #b00e55 100%);
+}
+/* Nagad */
+.mfs-pills span:nth-child(2) {
+  background: radial-gradient(circle at 38% 38%, #ffc46e 0%, #f7921e 55%, #c8720e 100%);
+}
+/* Rocket */
+.mfs-pills span:nth-child(3) {
+  background: radial-gradient(circle at 38% 38%, #c47ad8 0%, #8c3494 55%, #62226a 100%);
+}
+/* Cash on Delivery */
+.mfs-pills span:nth-child(4) {
+  background: radial-gradient(circle at 38% 38%, #7a8f76 0%, #4a6045 55%, #2e3e2b 100%);
 }
 
 .copyright {
@@ -4502,4 +4532,43 @@ footer {
   .payment-header h2 {
     font-size: 28px !important;
   }
+}
+
+/* ── Wishlist button — matches account-btn & bag pill style exactly ── */
+.wishlist-btn {
+  border: 1px solid rgba(34, 28, 26, 0.28);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 40px;
+  color: #221c1a;
+  transition: all 0.25s ease;
+  font-family: inherit;
+}
+
+.wishlist-btn:hover {
+  background: #221c1a;
+  color: #fff;
+  border-color: #221c1a;
+}
+
+.wishlist-btn:hover .wishlist-icon {
+  color: #f4c2b0;
+}
+
+.wishlist-icon {
+  font-size: 14px;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.wishlist-text {
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
 }
